@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "portfolio",
+  "description": "Roy Hwang Portfolio",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Roy H Hwang | royhhwang@gmail.com",
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
@@ -17,6 +17,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
+    "style": "sass --watch src/scss:src/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -24,6 +25,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/royhhwang/gatsby"
   }
 }
