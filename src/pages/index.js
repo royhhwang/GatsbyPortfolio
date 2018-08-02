@@ -6,7 +6,7 @@ import Work from './work.js'
 const IndexPage = () => (
   <div>
     <Banner />
-    <Work />
+    {/* <Work /> */}
   </div>
 )
 

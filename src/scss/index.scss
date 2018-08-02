@@ -1,3 +1,83 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url("../fonts/LemonMilk.otf") format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilklight;
+    src: url("../fonts/LemonMilklight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("../fonts/BebasNeueBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeueLight;
+    src: url("../fonts/BebasNeue Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url("../fonts/Bebas.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Code;
+    src: url("../fonts/CodeBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url("../fonts/Cabin Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: CrimsonTextBold;
+    src: url("../fonts/CrimsonText Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: CrimsonText;
+    src: url("../fonts/CrimsonText Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserratLight;
+    src: url("../fonts/Montserrat Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: MontserratThin;
+    src: url("../fonts/Montserrat Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url("../fonts/Oswald Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: OswaldLight;
+    src: url("../fonts/Oswald Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Playfair;
+    src: url("../fonts/PlayfairDisplay Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Playfair Bold;
+    src: url("../fonts/PlayfairDisplay Bold.ttf") format("truetype");
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -6,8 +86,6 @@ html {
 
 body {
     margin: 0;
-    overflow-x: hidden !important;
-    background-color: snow;
 }
 
 article,

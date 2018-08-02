@@ -8,10 +8,10 @@ import '../css/banner.css'
 const Banner = () => (
     <div className="banner-layer" id="#top">
         <Fade top>
-            <img src={Title} alt="roy title" className="banner-block" id="left-face" />
+            <img src={Title} alt="roy title" className="banner-block title-block" id="left-face" />
             <a href="#top">
                 <Fade>
-                    <img src={Face} alt="roy face" className="banner-block" id="right-face" />
+                    <img src={Face} alt="roy face" className="banner-block face-block" id="right-face" />
                 </Fade>
             </a>
         </Fade>
