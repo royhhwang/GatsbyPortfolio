@@ -1,0 +1,21 @@
+.banner-block {
+    display: inline-block;
+    min-height: 15em;
+    padding-bottom: 5em;
+}
+
+#left-face {
+    width: 61.7%;
+}
+
+#right-face {
+    width: 38%;
+}
+
+@keyframes slidePanel {
+    0% {
+        
+    }
+}
+
+@-webkit-keyframes slidePanel {}
