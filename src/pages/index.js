@@ -8,7 +8,7 @@ import Contact from './contact.js'
 const IndexPage = () => (
   <div>
     <Banner />
-    {/* <Work /> */}
+    <Work />
     <About />
   </div>
 )
