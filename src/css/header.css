@@ -1,10 +1,7 @@
 .header-layer {
   margin: 0 auto;
   max-width: 1250px;
-  padding-bottom: 1.45rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 3em; }
+  padding: 3em 1rem 1.45rem 1rem; }
 
 .header-layer h1 {
   margin: 0; }
@@ -81,6 +78,9 @@
   .header-block a {
     width: 33%;
     display: inline-block;
-    white-space: nowrap; } }
+    white-space: nowrap; }
+
+  .header-layer {
+    padding: 2em 0 0 0; } }
 
 /*# sourceMappingURL=header.css.map */

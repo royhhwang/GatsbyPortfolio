@@ -4,7 +4,7 @@ import Artsy from '../media/artsy.png'
 import Ring from '../media/ring.jpg'
 import Corgi from '../media/lowrescorgi.png'
 import Usagi from '../media/bunnyonly.png'
-import Race from '../media/racepaint.jpg'
+import Race from '../media/velocity.png'
 import Wombat from '../media/wombatmain.png'
 import '../css/work.css'
 
