@@ -8,33 +8,46 @@
 }
 
 .banner-block {
+    margin-top: 2em;
+    border-left: solid transparent 5px;
+    border-right: solid transparent 5px;
+}
+
+.title-block {
+    width: 66.66%;
+}
+
+.title-block img {
     min-height: 33em;
     max-height: 33em;
 }
 
-.title-block {
-    width: 68%;
+.face-block {
+    width: 33.33%;
 }
 
-.face-block {
-    width: 32%;
+.face-block img {
+    min-height: 33em;
+    max-height: 33em;
+    opacity: 1;
+    transition: opacity 0.5s;
+    backface-visibility: hidden;
+}
+
+.face-block img:hover {
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 1050px) {
-    .banner-block {
+    .banner-block img {
         min-height: 25em;
         max-height: 25em;
-        margin: 0;
-        padding: 0;
     }
 }
 
-
 @media screen and (max-width: 700px) {
-    .banner-block {
+    .banner-block img {
         min-height: 15em;
         max-height: 15em;
-        margin: 0;
-        padding: 0;
     }
 }

@@ -8,12 +8,16 @@ import '../css/banner.css'
 const Banner = () => (
     <div className="banner-layer" id="#top">
         <Fade top>
-            <img src={Title} alt="roy title" className="banner-block title-block" id="left-face" />
-            <a href="#top">
-                <Fade>
-                    <img src={Face} alt="roy face" className="banner-block face-block" id="right-face" />
-                </Fade>
-            </a>
+            <div className="banner-block title-block">
+                <img src={Title} alt="roy title" id="left-face" />
+            </div>
+        </Fade>
+        <Fade right>
+            <div className="banner-block face-block">
+                <a href="#about">
+                    <img src={Face} alt="roy face" id="right-face" />
+                </a>
+            </div>
         </Fade>
     </div>
 )
