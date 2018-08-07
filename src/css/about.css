@@ -5,9 +5,17 @@
 
 .about-para {
   line-height: 1.2em;
+  padding: 0 0.2em 0 0.2em;
   font-size: 28px;
   font-family: Cabin;
-  color: rgba(0, 0, 0, 0.9); }
+  color: rgba(0, 0, 0, 0.9);
+  display: inline-block; }
+
+.about-one {
+  width: 70%; }
+
+.about-two {
+  width: 30%; }
 
 @media screen and (max-width: 700px) {
   .about-layer {

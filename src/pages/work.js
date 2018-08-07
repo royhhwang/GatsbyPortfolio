@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fade, Flip } from 'react-reveal'
+import { Fade, Flip, Reveal } from 'react-reveal'
 import Artsy from '../media/artsy.png'
 import Ring from '../media/ring.jpg'
 import Corgi from '../media/lowrescorgi.png'
@@ -17,7 +17,7 @@ const Work = () => (
         </Fade>
         <Fade>
             <div className="project-layer">
-                <div className="project-blocks">
+                <div className="project-blocks fade-box">
                     <a href="#about">
                         <div className="project-image">
                             <Fade bottom>
@@ -26,9 +26,14 @@ const Work = () => (
                             </Fade>
                         </div>
                         <img src={Artsy} alt="artsy image" />
+                        <Reveal effect="fade-start">
+                            <div>
+                                &nbsp;
+                            </div>
+                        </Reveal>
                     </a>
                 </div>
-                <div className="project-blocks">
+                <div className="project-blocks fade-box">
                     <a href="#about">
                         <div className="project-image">
                             <Fade bottom>
@@ -37,9 +42,14 @@ const Work = () => (
                             </Fade>
                         </div>
                         <img src={Ring} alt="in the dark image" />
+                        <Reveal effect="fade-start">
+                            <div>
+                                &nbsp;
+                            </div>
+                        </Reveal>
                     </a>
                 </div>
-                <div className="project-blocks">
+                <div className="project-blocks fade-box">
                     <a href="#about">
                         <div className="project-image">
                             <Fade bottom>
@@ -48,9 +58,14 @@ const Work = () => (
                             </Fade>
                         </div>
                         <img src={Corgi} alt="corgi image" />
+                        <Reveal effect="fade-start">
+                            <div>
+                                &nbsp;
+                            </div>
+                        </Reveal>
                     </a>
                 </div>
-                <div className="project-blocks">
+                <div className="project-blocks fade-box">
                     <a href="#about">
                         <div className="project-image">
                             <Fade bottom>
@@ -59,9 +74,14 @@ const Work = () => (
                             </Fade>
                         </div>
                         <img src={Usagi} alt="usagi image" />
+                        <Reveal effect="fade-start">
+                            <div>
+                                &nbsp;
+                            </div>
+                        </Reveal>
                     </a>
                 </div>
-                <div className="project-blocks">
+                <div className="project-blocks fade-box">
                     <a href="#about">
                         <div className="project-image">
                             <Fade bottom>
@@ -70,9 +90,14 @@ const Work = () => (
                             </Fade>
                         </div>
                         <img src={Race} alt="race painting image" />
+                        <Reveal effect="fade-start">
+                            <div>
+                                &nbsp;
+                            </div>
+                        </Reveal>
                     </a>
                 </div>
-                <div className="project-blocks">
+                <div className="project-blocks fade-box">
                     <a href="#about">
                         <div className="project-image">
                             <Fade bottom>
@@ -81,10 +106,15 @@ const Work = () => (
                             </Fade>
                         </div>
                         <img src={Wombat} alt="wombat image" />
+                        <Reveal effect="fade-start">
+                            <div>
+                                &nbsp;
+                            </div>
+                        </Reveal>
                     </a>
                 </div>
             </div>
-        </Fade>
+        </Fade >
     </div >
 )
 

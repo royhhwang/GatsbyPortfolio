@@ -13,17 +13,17 @@ const Header = ({ siteTitle }) => (
     <div className="header-layer">
       <Flip bottom>
         <h1 className="header-block">
-          <Link className="hvr-sweep-to-right"
+          <Link className="header-link"
             to="#contact"
           >
             Contact
         </Link>
-          <Link className="hvr-sweep-to-right"
+          <Link className="header-link"
             to="#about"
           >
             About
         </Link>
-          <Link className="hvr-sweep-to-right"
+          <Link className="header-link"
             to="#projects"
           >
             Projects

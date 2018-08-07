@@ -16,8 +16,9 @@
 .project-blocks {
     display: inline-block;
     position: relative;
-    width: 33%;
-    padding: 1em;
+    width: 30%;
+    margin: 0.2em;
+    padding: 0.5em;
     background-color: rgba(220, 220, 220, 0.6);
     border: solid rgb(245, 245, 245) 0.5em;
     opacity: 0.7;
@@ -34,11 +35,6 @@
     .img-filler {
         background-color: black;
     }
-}
-
-.project-blocks img {
-    backface-visibility: hidden;
-    width: 100%;
 }
 
 .project-image {
@@ -61,9 +57,122 @@
     background-color: white;
 }
 
+.fade-box {
+    background: none;
+    color: inherit;
+    position: relative;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.fade-box:focus {
+    outline: none;
+}
+
+.fade-box > span {
+    vertical-align: top;
+
+    svg {
+        vertical-align: top;
+    }
+}
+
+.fade-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: rgb(255, 0, 0);
+    z-index: -1;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
+    transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+
+.fade-box:hover {
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.fade-box:hover::before {
+    opacity: 1;
+    background-color: rgba(0, 255, 255, 0.3);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.fade-start {
+    position: absolute;
+    background: transparent;
+    border: solid transparent 5px;
+    width: 100%;
+    height: 150%;
+    bottom: 0;
+    left: 0;
+    backface-visibility: hidden;
+    animation: fadeStart 3s linear forwards;
+    -webkit-animation: fadeStart 3s linear forwards;
+}
+
+@keyframes fadeStart {
+    0% {
+        transform: translateY(100%);
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+    }
+
+    99% {
+        background: rgba(0, 0, 0, 1);
+        transform: translateY(-200%);
+        opacity: 1;
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 1);
+        transform: translateY(-200%);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes fadeStart {
+    0% {
+        transform: translateY(100%);
+        background: rgba(0, 0, 0, 1);
+        opacity: 1;
+    }
+
+    99% {
+        background: rgba(0, 0, 0, 1);
+        transform: translateY(-200%);
+        opacity: 1;
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 1);
+        transform: translateY(-200%);
+        opacity: 0;
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1050px) {
     .project-blocks {
-        width: 50%;
+        width: 48%;
     }
 }
 
