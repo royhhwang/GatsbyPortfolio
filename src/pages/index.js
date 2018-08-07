@@ -10,6 +10,7 @@ const IndexPage = () => (
     <Banner />
     <Work />
     <About />
+    <Contact />
   </div>
 )
 

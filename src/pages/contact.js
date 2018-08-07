@@ -1,20 +1,20 @@
 import React from 'react'
 import { Fade, Flip } from 'react-reveal'
 import '../css/contact.css'
+import Git from "../media/github.png"
+import Link from "../media/linkedin.png"
 
 const Contact = () => (
-    <div className="about-layer" id="about">
+    <div className="contact-layer" id="contact">
         <Fade bottom>
-            <h1>About</h1>
+            <h1>Contact</h1>
         </Fade>
-        <Fade>
-            <p className="about-para">I am a Full Stack Developer and Front End Designer proficient in the MERN stack and JavaScript.
-                I help companies build creative and inspired webpages using my unique mix of game programming history and visual chops.
-            </p>
-            <p className="about-para">Previously, I worked as a Sales Associate assigned to the Los Angeles and Palm Springs region, tasked with managing over 120 separate accounts.
-                Within 2 years, I achieved 140% profit over budget and greatly expanded company influence in Palm Springs and Indio.
-            </p>
-        </Fade>
+            <div className="icon-links hover-right">
+                <a href="https://github.com/royhhwang" target="_blank"><img src={Git} alt="https://github.com/royhhwang" /><h3>GitHub</h3></a>
+            </div>
+            <div className="icon-links hover-right">
+                <a href="https://www.linkedin.com/in/royhhwang/" target="_blank"><img src={Link} alt="https://www.linkedin.com/in/royhhwang/" /><h3>LinkedIn</h3></a>
+            </div>
     </div>
 )
 

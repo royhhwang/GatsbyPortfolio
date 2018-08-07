@@ -1,0 +1,82 @@
+.contact-layer {
+    font-size: 50px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-links {
+    color: rgba(0, 0, 0, 0);
+    padding: 0.5em 0 0.5em 0;
+    width: 6em;
+}
+
+.icon-links img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 0.5em;
+    opacity: 0.6;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    backface-visibility: hidden;
+}
+
+.icon-links:hover {
+    img {
+        opacity: 1 !important;
+    }
+}
+
+.icon-links h3 {
+    font-size: 40px;
+}
+
+.hover-right {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    padding: 0.5em;
+}
+
+.hover-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(166, 180, 187, 0.555);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hover-right:hover, .hover-right:focus, .hover-right:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.hover-right:hover:before, .hover-right:focus:before, .hover-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 700px) {
+    .contact-layer {
+        font-size: 30px;
+    }
+}

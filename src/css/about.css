@@ -5,12 +5,16 @@
 
 .about-para {
   line-height: 1.2em;
-  font-size: 28px !important;
+  font-size: 28px;
   font-family: Cabin;
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.9); }
 
 @media screen and (max-width: 700px) {
   .about-layer {
-    padding-top: 0; } }
+    padding-top: 0;
+    font-size: 30px; }
+
+  .about-para {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=about.css.map */

@@ -25,6 +25,7 @@
   max-height: 33em;
   opacity: 1;
   transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
   backface-visibility: hidden; }
 
 .face-block img:hover {
