@@ -6,10 +6,10 @@
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
+    "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "react-helmet": "^5.2.0",
-    "react-reveal": "^1.2.2",
-    "react-router-page-transition": "^3.1.0"
+    "react-reveal": "^1.2.2"
   },
   "keywords": [
     "gatsby"

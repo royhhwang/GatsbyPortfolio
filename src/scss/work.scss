@@ -1,7 +1,6 @@
 .work-layer {
     font-size: 50px;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding: 1.7em 0 1.7em 0;
     color: rgba(0, 0, 0, 0.3);
     width: 100%;
     overflow: hidden;
@@ -37,6 +36,11 @@
     }
 }
 
+.project-blocks a {
+    width: 0;
+    height: 0;
+}
+
 .project-image {
     position: absolute;
     bottom: 3em;
@@ -47,7 +51,7 @@
 }
 
 .project-title {
-    padding: 0.1em 0 0 0.4em;
+    padding: 0.25em 0 0 0.4em;
 }
 
 .img-filler {
@@ -170,7 +174,7 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 950px) {
     .project-blocks {
         width: 48%;
     }

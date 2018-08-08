@@ -7,22 +7,22 @@
 
 .banner-block {
   margin-top: 2em;
-  border-left: solid transparent 5px;
-  border-right: solid transparent 5px; }
+  border-left: solid transparent 7px;
+  border-right: solid transparent 7px; }
 
 .title-block {
-  width: 66.66%; }
+  width: 67%; }
 
 .title-block img {
-  min-height: 33em;
-  max-height: 33em; }
+  min-height: 34em;
+  max-height: 34em; }
 
 .face-block {
-  width: 33.33%; }
+  width: 33%; }
 
 .face-block img {
-  min-height: 33em;
-  max-height: 33em;
+  min-height: 34em;
+  max-height: 34em;
   opacity: 1;
   transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;

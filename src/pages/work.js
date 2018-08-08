@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Fade, Flip, Reveal } from 'react-reveal'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import Artsy from '../media/artsy.png'
 import Ring from '../media/ring.jpg'
 import Corgi from '../media/lowrescorgi.png'
@@ -8,114 +9,76 @@ import Race from '../media/velocity.png'
 import Wombat from '../media/wombatmain.png'
 import '../css/work.css'
 
-const Work = () => (
-    <div>
-        <Fade left>
-            <div className="work-layer" id="projects">
-                <h1>Projects</h1>
-            </div>
-        </Fade>
-        <Fade>
-            <div className="project-layer">
-                <div className="project-blocks fade-box">
-                    <a href="#about">
-                        <div className="project-image">
-                            <Fade bottom>
-                                <div className="img-filler">&nbsp;</div>
-                                <h2 className="project-title">Artsy</h2>
-                            </Fade>
-                        </div>
-                        <img src={Artsy} alt="artsy image" />
-                        <Reveal effect="fade-start">
-                            <div>
-                                &nbsp;
+class Work extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            projects: [
+                {
+                    name: 'Artsy', image: Artsy, descript: 'artsy image', link: '/artsy'
+                },
+                {
+                    name: 'In the Dark', image: Ring, descript: 'ring image', link: '/inthedark'
+                },
+                {
+                    name: 'Corgi', image: Corgi, descript: 'corgi image', link: '/corgi'
+                },
+                {
+                    name: 'Usagi', image: Usagi, descript: 'usagi image', link: '/usagi'
+                },
+                {
+                    name: 'Race Painting', image: Race, descript: 'race painting image', link: '/racepainting'
+                },
+                {
+                    name: 'Wombat', image: Wombat, descript: 'wombat image', link: '/wombat'
+                },
+            ]
+        }
+    }
+
+    render() {
+
+
+        const projectList = this.state.projects.map((work, index) => {
+            return (
+                <div className="project-blocks fade-box" key={index}>
+                    <PageTransition>
+                        <a href={work.link}>
+                            <div className="project-image">
+                                <Fade bottom>
+                                    <div className="img-filler">&nbsp;</div>
+                                    <h2 className="project-title">{work.name}</h2>
+                                </Fade>
                             </div>
-                        </Reveal>
-                    </a>
-                </div>
-                <div className="project-blocks fade-box">
-                    <a href="#about">
-                        <div className="project-image">
-                            <Fade bottom>
-                                <div className="img-filler lg-img">&nbsp;</div>
-                                <h2 className="project-title">In the Dark</h2>
-                            </Fade>
-                        </div>
-                        <img src={Ring} alt="in the dark image" />
-                        <Reveal effect="fade-start">
-                            <div>
-                                &nbsp;
+                            <img src={work.image} alt={work.descript} />
+                            <Reveal effect="fade-start">
+                                <div>
+                                    &nbsp;
                             </div>
-                        </Reveal>
-                    </a>
+                            </Reveal>
+                        </a>
+                    </PageTransition>
                 </div>
-                <div className="project-blocks fade-box">
-                    <a href="#about">
-                        <div className="project-image">
-                            <Fade bottom>
-                                <div className="img-filler">&nbsp;</div>
-                                <h2 className="project-title">Corgi</h2>
-                            </Fade>
-                        </div>
-                        <img src={Corgi} alt="corgi image" />
-                        <Reveal effect="fade-start">
-                            <div>
-                                &nbsp;
-                            </div>
-                        </Reveal>
-                    </a>
-                </div>
-                <div className="project-blocks fade-box">
-                    <a href="#about">
-                        <div className="project-image">
-                            <Fade bottom>
-                                <div className="img-filler">&nbsp;</div>
-                                <h2 className="project-title">Usagi</h2>
-                            </Fade>
-                        </div>
-                        <img src={Usagi} alt="usagi image" />
-                        <Reveal effect="fade-start">
-                            <div>
-                                &nbsp;
-                            </div>
-                        </Reveal>
-                    </a>
-                </div>
-                <div className="project-blocks fade-box">
-                    <a href="#about">
-                        <div className="project-image">
-                            <Fade bottom>
-                                <div className="img-filler lg-img">&nbsp;</div>
-                                <h2 className="project-title">Race Paint</h2>
-                            </Fade>
-                        </div>
-                        <img src={Race} alt="race painting image" />
-                        <Reveal effect="fade-start">
-                            <div>
-                                &nbsp;
-                            </div>
-                        </Reveal>
-                    </a>
-                </div>
-                <div className="project-blocks fade-box">
-                    <a href="#about">
-                        <div className="project-image">
-                            <Fade bottom>
-                                <div className="img-filler">&nbsp;</div>
-                                <h2 className="project-title">Wombat</h2>
-                            </Fade>
-                        </div>
-                        <img src={Wombat} alt="wombat image" />
-                        <Reveal effect="fade-start">
-                            <div>
-                                &nbsp;
-                            </div>
-                        </Reveal>
-                    </a>
-                </div>
-            </div>
-        </Fade >
-    </div >
-)
+            )
+        })
+
+        return (
+
+            <div>
+                <Fade left>
+                    <div className="work-layer" id="projects">
+                        <h1>Projects</h1>
+                    </div>
+                </Fade>
+                <Fade>
+                    <div className="project-layer">
+                        {projectList}
+                    </div>
+                </Fade >
+            </div >
+        )
+    }
+}
 
 export default Work
