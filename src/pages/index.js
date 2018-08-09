@@ -13,7 +13,7 @@ const IndexPage = () => (
     <Work />
     <About />
     <Contact />
-    <Button />
+    <TopButton />
   </div>
 )
 
