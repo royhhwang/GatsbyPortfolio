@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal'
 import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import ArtsyVideo from '../media/artsy.mp4'
-import ArtsyIcon from '../media/artsy.jpg'
+import ArtsyIcon from '../media/artsyjpg.jpg'
 import '../css/project.css'
 
 const Artsy = () => (
