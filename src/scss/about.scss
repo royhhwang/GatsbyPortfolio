@@ -1,33 +1,138 @@
 .about-layer {
     font-size: 50px;
-    padding-top: 1.5em;
+    padding-top: 1em;
     color: rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 .about-para {
-    line-height: 1.2em;
-    padding: 0 0.2em 0 0.2em;
-    font-size: 28px;
+    line-height: 1.4em;
+    padding: 0 0.5em 0 0.5em;
+    font-size: 20px;
     font-family: Cabin;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 1);
     display: inline-block;
 }
 
+.about-bottom {
+    padding-bottom: 0.5em;
+}
+
 .about-one {
-    width: 70%;
+    width: 67%;
 }
 
 .about-two {
-    width: 30%;
+    width: 33%;
+    position: absolute;
+    font-family: Code;
+    text-align: center;
+}
+
+.resume-layer {
+    background: white;
+    padding: 0.8em;
+    position: relative;
+    border: solid transparent 6px;
+    transition: border-width 0.3s linear;
+    -webkit-transition: border-width 0.3s linear;
+}
+
+.resume-layer:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * 0.15em);
+    left: calc(-1 * 0.15em);
+    height: calc(100% + 0.15em * 2);
+    width: calc(100% + 0.15em * 2);
+    border: solid white 1px;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    z-index: -1;
+    animation: animatedgradient 3s linear infinite;
+    -webkit-animation: animatedgradient 3s linear infinite;
+}
+
+.resume-layer:hover {
+    border-width: 1px;
+    transition: border-width 0.3s linear;
+    -webkit-transition: border-width 0.3s linear;
+}
+
+.exp-para {
+    position: relative;
+    font-family: Montserrat;
+    text-align: left !important;
+    padding-left: 1.5em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.exp-title {
+    margin: 0;
+}
+
+.exp-sub {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: normal;
+    padding-bottom: 1.8em;
+}
+
+@keyframes animatedgradient {
+    0% {
+        filter: blur(1px) hue-rotate(0deg);
+    }
+
+    100% {
+        filter: blur(1px) hue-rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .exp-para {
+        font-size:14px;
+    }
+    .exp-sub {
+        font-size:12px;
+    }
 }
 
 @media screen and (max-width: 700px) {
+    .about-one {
+        width: 100%;
+    }
+
+    .about-two {
+        position: relative;
+        width: 100%;
+        padding: 1em 0 1em 0.6em;
+        text-align: left;
+    }
+
+    .para-top {
+        padding-top: 2em !important;
+    }
+
+    .exp-para {
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
     .about-layer {
         padding-top: 0;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .about-para {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .resume-layer {
+        border: none;
+    }
+
+    .mobile-hide {
+        display: none;
     }
 }

@@ -44,7 +44,7 @@
   font-family: Playfair;
   src: url("../fonts/PlayfairDisplayRegular.ttf") format("truetype"); }
 @font-face {
-  font-family: Playfair Bold;
+  font-family: PlayfairBold;
   src: url("../fonts/PlayfairDisplayBold.ttf") format("truetype"); }
 html {
   font-family: sans-serif;
@@ -55,20 +55,6 @@ html {
 body {
   margin: 0;
   overflow-x: hidden; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
 
 audio,
 canvas,
@@ -431,7 +417,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem; }
+  margin-bottom: 0; }
 
 figure {
   margin-left: 0;

@@ -1,5 +1,6 @@
 .banner-layer {
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 4.5em; }
 
 .banner-block {
   display: inline-block;
@@ -18,7 +19,8 @@
   max-height: 34em; }
 
 .face-block {
-  width: 33%; }
+  min-width: 33%;
+  max-width: 33%; }
 
 .face-block img {
   min-height: 34em;
@@ -34,7 +36,11 @@
 @media screen and (max-width: 1050px) {
   .banner-block img {
     min-height: 25em;
-    max-height: 25em; } }
+    max-height: 25em; }
+
+  .face-block img {
+    min-width: 100%;
+    max-width: 100%; } }
 @media screen and (max-width: 700px) {
   .banner-block img {
     min-height: 15em;

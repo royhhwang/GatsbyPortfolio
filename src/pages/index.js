@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
-import Header from './header.js'
-import Banner from './banner.js'
-import Work from './work.js'
-import About from './about.js'
-import Contact from './contact.js'
-import Transition from './transition.js'
+import Header from '../components/header.js'
+import Banner from '../components/banner.js'
+import Work from '../components/work.js'
+import About from '../components/about.js'
+import Contact from '../components/contact.js'
 
 const IndexPage = () => (
   <div>
@@ -13,7 +12,6 @@ const IndexPage = () => (
     <Work />
     <About />
     <Contact />
-    {/* <Transition /> */}
   </div>
 )
 

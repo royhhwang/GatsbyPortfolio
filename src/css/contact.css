@@ -1,7 +1,6 @@
 .contact-layer {
   font-size: 50px;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding: 0.5em 0 1.5em 0;
   color: rgba(0, 0, 0, 0.3); }
 
 .icon-links {
@@ -21,11 +20,21 @@
 
 .icon-links:hover img {
   opacity: 1 !important; }
+.icon-links:hover h3 {
+  animation: slideLeft 0.3s linear forwards;
+  -webkit-animation: slideLeft 0.3s linear forwards; }
 
 .icon-links h3 {
   font-size: 35px;
-  padding-top: 0.1em; }
+  padding-top: 0.1em;
+  transform: translateY(-150%); }
 
+@keyframes slideLeft {
+  100% {
+    transform: translateY(0); } }
+@-webkit-keyframes slideLeft {
+  100% {
+    transform: translateY(0); } }
 .hover-link {
   display: block;
   padding: 0.2em 0 0.2em 0.2em;
@@ -89,9 +98,14 @@
     font-size: 40px; } }
 @media screen and (max-width: 700px) {
   .contact-layer {
-    font-size: 30px; }
+    font-size: 25px; }
 
   .hover-link {
-    width: 8em; } }
+    width: 8em; }
+
+  .icon-links h3 {
+    font-size: 25px;
+    padding-top: 0.4em;
+    transform: translateY(0%); } }
 
 /*# sourceMappingURL=contact.css.map */

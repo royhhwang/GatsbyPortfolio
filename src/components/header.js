@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { Flip } from 'react-reveal';
 import "../css/header.css";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
     <div
         style={{
             background: 'transparent',
@@ -27,6 +27,11 @@ const Header = ({ siteTitle }) => (
                         to="#projects"
                     >
                         Projects
+                    </Link>
+                    <Link className="header-link"
+                        to="/"
+                    >
+                        Home
                     </Link>
                 </h1>
             </Flip>
