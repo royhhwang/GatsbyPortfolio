@@ -8,4 +8,4 @@ yarn-error.log
 .DS_Store
 
 # Extra pages
-/src/json
+/src/media

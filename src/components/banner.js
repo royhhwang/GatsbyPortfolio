@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Fade } from 'react-reveal'
+import { Fade, Reveal } from 'react-reveal'
 import Title from '../media/leftbanner.jpg'
 import Face from '../media/rightbanner.jpg'
 import '../css/banner.css'
