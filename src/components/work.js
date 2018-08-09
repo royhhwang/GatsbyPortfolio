@@ -69,6 +69,7 @@ class Work extends Component {
                         <Reveal effect="fade-start">
                             <div>
                                 &nbsp;
+                                &nbsp;
                             </div>
                         </Reveal>
                     </a>
