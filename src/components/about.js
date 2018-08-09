@@ -20,7 +20,7 @@ const About = () => (
                     In a previous life, I worked extensively as a <strong>sales associate</strong>, an invaluable experience that honed my organizational and interpersonal skills.
                     <br />
                     <br />
-                    When I'm not coding, I'm out hiking with Pokemon Go, tripping at the gym, or lounging at Starbucks with a cold drink.
+                    When I'm not coding, I'm out hitting the gym, hiking with Pokemon Go, or lounging at Starbucks with a cold drink.
                 </p>
             </div>
         </Fade>
