@@ -22,7 +22,7 @@ const Race = () => (
         <h1 className="display-title">Race Painting</h1>
       </Fade>
       <Fade left>
-        <video className="half-display" controls="true" playsInline muted autoPlay loop>
+        <video className="half-display video-content" controls="true" playsInline muted autoPlay loop>
           <source src={RaceVideo} type="video/mp4" />
           Your browser does not support this video!
         </video>

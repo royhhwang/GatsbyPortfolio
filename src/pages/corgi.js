@@ -4,7 +4,7 @@ import { Fade } from 'react-reveal'
 import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import CorgiVideo from '../media/corgi.mp4'
-import CorgiIcon from '../media/corgi.png'
+import CorgiIcon from '../media/corgi.jpg'
 import '../css/project.css'
 
 const Corgi = () => (
@@ -22,7 +22,7 @@ const Corgi = () => (
         <h1 className="display-title">Coding with Corgis</h1>
       </Fade>
       <Fade left>
-        <video className="half-display" controls="true" playsInline muted autoPlay loop>
+        <video className="half-display video-content" controls="true" playsInline muted autoPlay loop>
           <source src={CorgiVideo} type="video/mp4" />
           Your browser does not support this video!
         </video>

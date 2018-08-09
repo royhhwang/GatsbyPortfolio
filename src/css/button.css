@@ -1,0 +1,14 @@
+.top-button {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em; }
+
+@media screen and (max-width: 700px) {
+  .top-button {
+    width: 1em;
+    height: 1em;
+    right: 0.5em; } }
+
+/*# sourceMappingURL=button.css.map */

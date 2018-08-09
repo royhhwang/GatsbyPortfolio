@@ -13,17 +13,21 @@
   padding: 0 0 0.7em 0; }
 
 .half-display {
-  width: 50%;
   display: inline-block;
   line-height: 2em; }
   .half-display img {
     width: 100px;
     height: 100px; }
 
+.video-content {
+  width: 70%; }
+
 .text-content {
   font-size: 24px;
+  width: 30%;
   text-align: center;
-  position: absolute; }
+  position: absolute;
+  padding-top: 3.5em; }
 
 .round {
   border-radius: 50px; }
@@ -107,7 +111,17 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
 
+@media screen and (max-width: 1050px) {
+  .half-display img {
+    width: 70px;
+    height: 70px; }
+
+  .text-content {
+    font-size: 20px; } }
 @media screen and (max-width: 700px) {
+  hr {
+    margin: 5px !important; }
+
   .display-layer {
     padding-top: 0.5em; }
 
@@ -123,11 +137,12 @@
     width: 100%; }
 
   .half-display img {
-    width: 70px;
-    height: 70px; }
+    width: 50px;
+    height: 50px; }
 
   .text-content {
     position: relative;
-    padding-top: 1em; } }
+    padding-top: 1em;
+    font-size: 16px; } }
 
 /*# sourceMappingURL=project.css.map */

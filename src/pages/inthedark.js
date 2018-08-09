@@ -22,7 +22,7 @@ const Dark = () => (
         <h1 className="display-title">In the Dark</h1>
       </Fade>
       <Fade left>
-        <video className="half-display" controls="true" playsInline muted autoPlay loop>
+        <video className="half-display video-content" controls="true" playsInline muted autoPlay loop>
           <source src={DarkVideo} type="video/mp4" />
           Your browser does not support this video!
         </video>
