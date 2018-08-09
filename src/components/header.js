@@ -14,17 +14,17 @@ const Header = () => (
             <Flip bottom>
                 <h1 className="header-block">
                     <Link className="header-link"
-                        to="#contact"
+                        to="/#contact"
                     >
                         Contact
                     </Link>
                     <Link className="header-link"
-                        to="#about"
+                        to="/#about"
                     >
                         About
                     </Link>
                     <Link className="header-link"
-                        to="#projects"
+                        to="/#projects"
                     >
                         Projects
                     </Link>
