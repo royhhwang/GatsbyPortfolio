@@ -3,7 +3,7 @@ import '../css/button.css'
 import TopArrow from '../media/top-arrow.svg'
 import {Fade} from 'react-reveal'
 
-const Button = () => (
+const TopButton = () => (
     <Fade bottom>
         <a href="#" className="top-button">
             <img src={TopArrow} alt="all the way up" />
@@ -11,4 +11,4 @@ const Button = () => (
     </Fade>
 )
 
-export default Button
+export default TopButton
