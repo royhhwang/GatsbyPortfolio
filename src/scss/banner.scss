@@ -1,8 +1,21 @@
 @import 'setup';
 
 .banner {
+    background-attachment: fixed;
+    background-size: 40%;
+    position: relative;
     width: 100%;
-    background-color: #929f71;
+
+    &:before {
+        background-color: #96a17a;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0.88;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 }
 
 .banner-wrapper {
@@ -11,7 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     min-height: 100vh;
-    padding: 4rem 1rem 2rem;
+    padding: 4rem 1rem 3rem;
 
     @media screen and ($small-desktop-up) {
         flex-wrap: nowrap;
@@ -21,6 +34,7 @@
 .banner-content {
     margin-top: -8rem;
     order: 2;
+    z-index: 1;
     text-align: center;
 
     @media screen and ($small-desktop-up) {
@@ -33,7 +47,7 @@
 
 .banner-title,
 .banner-subtitle {
-    background: #697647;
+    background: #768352;
     color: white;
     display: inline-block;
     padding: 0.1rem 1rem;
@@ -61,4 +75,8 @@
     @media screen and ($small-desktop-up) {
         font-size: 2rem;
     }
+}
+
+.banner-img {
+    filter: saturate(110%);
 }

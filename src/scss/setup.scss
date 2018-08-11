@@ -1,8 +1,22 @@
-// Variables
+// Breakpoints
+$large-tablet-up: 'min-width: 720px';
 $small-desktop-up: 'min-width: 960px';
 $large-desktop-up: 'min-width: 1120px';
 
-// Clearfix
+// Colors
+$light-gray: #d7d7d7;
+$orange: #ff6700;
+
+// Transition speeds
+$med-speed: 0.3s;
+
+// Mixins
+@mixin smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
 @mixin clearfix {
   &:after {
     clear: both;
@@ -11,8 +25,4 @@ $large-desktop-up: 'min-width: 1120px';
     height: 0;
     visibility: hidden;
   }
-}
-
-.clearfix {
-  @include clearfix;
 }

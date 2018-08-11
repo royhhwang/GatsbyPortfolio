@@ -1,7 +1,7 @@
+@import 'setup';
+
 .contact-layer {
-    font-size: 50px;
-    padding: 0.5em 0 1.5em 0;
-    color: rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
 }
 
 .icon-links {
@@ -116,17 +116,7 @@
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-@media screen and (max-width: 1050px) {
-    .contact-layer {
-        font-size: 40px;
-    }
-}
-
 @media screen and (max-width: 700px) {
-    .contact-layer {
-        font-size: 25px;
-    }
-
     .hover-link {
         width: 8em;
     }

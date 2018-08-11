@@ -1,30 +1,43 @@
+@import 'setup';
+
 .about-layer {
-    font-size: 50px;
-    padding-top: 1em;
-    color: rgba(0, 0, 0, 0.3);
     position: relative;
+    min-height: 100vh;
 }
 
-.about-para {
-    line-height: 1.4em;
-    padding: 0 0.5em 0 0.5em;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 1);
-    display: inline-block;
+.about-content {
+    @media screen and ($small-desktop-up) {
+        display: flex; // trying to use flexbox more to create layouts
+    }
 }
 
 .about-bottom {
+    border-top: 1px solid $light-gray;
+    margin-top: 2rem;
     padding-bottom: 0.5em;
+    padding-top: 2rem;
 }
 
 .about-one {
-    width: 67%;
+    flex-basis: 67%; // this is the same things as saying "width", but for flexbox children
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
 }
 
 .about-two {
-    width: 33%;
-    position: absolute;
-    text-align: center;
+    flex-basis: 33%;
+
+    @media screen and ($small-desktop-up) {
+        margin-left: 2.5rem;
+    }
+}
+
+.about-one,
+.about-two {
+    margin-bottom: 3rem;
 }
 
 .resume-layer {
@@ -57,22 +70,37 @@
 }
 
 .exp-para {
-    position: relative;
-    text-align: left !important;
-    padding-left: 1.5em;
-    font-size: 18px;
-    font-weight: bold;
+    @include clearfix; // this is to clear floated children
+}
+
+.exp-para-item {
+    float: left; // here are the floated children
+    margin-bottom: 2.2rem;
+    width: 100%;
+
+    @media screen and ($large-tablet-up) {
+        width: 50%;
+    }
+
+    @media screen and ($small-desktop-up) {
+        float: none;
+        width: auto;
+    }
 }
 
 .exp-title {
     margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
 }
 
 .exp-sub {
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: normal;
-    padding-bottom: 1.8em;
+    font-size: 0.9rem;
+    line-height: 1.9;
+
+    &:nth-of-type(2) {
+        color: #b9b9b9;
+    }
 }
 
 @keyframes animatedgradient {
@@ -85,46 +113,7 @@
     }
 }
 
-@media screen and (max-width: 950px) {
-    .exp-para {
-        font-size:14px;
-    }
-    .exp-sub {
-        font-size:12px;
-    }
-}
-
 @media screen and (max-width: 700px) {
-    .about-one {
-        width: 100%;
-    }
-
-    .about-two {
-        position: relative;
-        width: 100%;
-        padding: 1em 0 1em 0.6em;
-        text-align: left;
-    }
-
-    .para-top {
-        padding-top: 2em !important;
-    }
-
-    .exp-para {
-        padding: 0;
-        margin: 0;
-        font-size: 14px;
-    }
-
-    .about-layer {
-        padding-top: 0;
-        font-size: 25px;
-    }
-
-    .about-para {
-        font-size: 16px;
-    }
-
     .resume-layer {
         border: none;
     }

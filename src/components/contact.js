@@ -7,7 +7,7 @@ import Link from "../media/linkedin.png"
 const Contact = () => (
     <div className="contact-layer wrapper" id="contact">
         <Fade top>
-            <h1>Contact</h1>
+            <h1 className="section-header">Contact</h1>
         </Fade>
         <Fade left>
             <div className="icon-links hover-link">

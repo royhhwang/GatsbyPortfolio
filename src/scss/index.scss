@@ -1,8 +1,11 @@
+@import 'setup';
+
 html {
     font-family: Muli;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
+    color: #333;
 }
 
 body {
@@ -44,7 +47,6 @@ html {
 }
 
 body {
-    color: hsla(0, 0%, 0%, 0.8);
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -69,7 +71,6 @@ img {
 h1 {
     padding: 0;
     margin: 0 0 1.45rem;
-    color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
@@ -79,7 +80,6 @@ h2 {
     margin-right: 0;
     margin-top: 0;
     padding: 0;
-    color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
@@ -89,7 +89,6 @@ h2 {
 h3 {
     padding: 0;
     margin: 0;
-    color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
@@ -99,7 +98,6 @@ h3 {
 h4 {
     padding: 0;
     margin: 0 0 1.45rem;
-    color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
@@ -109,7 +107,6 @@ h4 {
 h5 {
     padding: 0;
     margin: 0 0 1.45rem;
-    color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.85028rem;
@@ -119,7 +116,6 @@ h5 {
 h6 {
     padding: 0;
     margin: 0 0 1.45rem;
-    color: inherit;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.78405rem;
@@ -135,12 +131,15 @@ p {
 }
 
 strong {
-    color: red;
+    @include smooth;
+    color: $orange;
     font-weight: 700;
 }
 
 ol, ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 @import "utility";
