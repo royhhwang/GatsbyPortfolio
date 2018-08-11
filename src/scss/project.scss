@@ -44,14 +44,22 @@
 }
 
 .project-content {
-    display: flex;
-    justify-content: center;
-    padding: 4rem 0 6rem;
+    padding: 3rem 0 6rem;
+
+    @media screen and ($large-tablet-up) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.project-description,
+.text-content {
+    margin: 1rem 0;
 }
 
 .project-description {
-    flex-basis: 57%;
-    max-width: 700px;
+    max-width: 690px;
 
     strong {
         color: $bright-green;
@@ -59,9 +67,10 @@
 }
 
 .text-content {
-    flex-basis: 20%;
+    flex-basis: 10%;
+    margin-left: 3rem;
     text-align: center;
-    margin-left: 1rem;
+    width: 100%;
 
     .dark-green-btn {
         margin-top: 2rem;
@@ -197,15 +206,6 @@
 
 @media screen and (max-width: 700px) {
     .display-layer {
-        padding-top: 0.5em;
-    }
-
-    .half-display {
-        width: 100%;
-    }
-
-    .half-display img {
-        width: 50px;
-        height: 50px;
+        padding-top: 4rem;
     }
 }
