@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade, Flip } from 'react-reveal'
-import '../css/contact.css'
+import '../scss/contact.scss'
 import Git from "../media/github.png"
 import Link from "../media/linkedin.png"
 

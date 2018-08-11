@@ -5,7 +5,7 @@ import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import WombatVideo from '../media/wombat.mp4'
 import WombatIcon from '../media/wombatmain.png'
-import '../css/project.css'
+import '../scss/project.scss'
 
 const Wombat = () => (
   <div>

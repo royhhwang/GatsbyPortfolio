@@ -5,7 +5,7 @@ import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import RaceVideo from '../media/racevelocity.mp4'
 import RaceIcon from '../media/taiyaki.png'
-import '../css/project.css'
+import '../scss/project.scss'
 
 const Race = () => (
   <div>

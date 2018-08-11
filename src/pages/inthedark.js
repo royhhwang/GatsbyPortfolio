@@ -5,7 +5,7 @@ import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import DarkVideo from '../media/spooky.mp4'
 import DarkIcon from '../media/ring.jpg'
-import '../css/project.css'
+import '../scss/project.scss'
 
 const Dark = () => (
   <div>

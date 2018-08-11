@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { Fade, Reveal } from 'react-reveal'
 import Title from '../media/leftbanner.jpg'
 import Face from '../media/rightbanner.jpg'
-import '../css/banner.css'
+import '../scss/banner.scss'
 
 const Banner = () => (
     <div className="banner-layer" id="#top">

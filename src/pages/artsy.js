@@ -5,7 +5,7 @@ import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import ArtsyVideo from '../media/artsy.mp4'
 import ArtsyIcon from '../media/artsyjpg.jpg'
-import '../css/project.css'
+import '../scss/project.scss'
 
 const Artsy = () => (
   <div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../css/button.css'
+import '../scss/button.scss'
 import TopArrow from '../media/top-arrow.svg'
 import { Fade } from 'react-reveal'
 

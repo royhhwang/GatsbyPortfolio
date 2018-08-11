@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fade, Flip } from 'react-reveal'
 import Resume from '../media/resume.pdf'
-import '../css/about.css'
+import '../scss/about.scss'
 
 const About = () => (
     <div className="about-layer" id="about">

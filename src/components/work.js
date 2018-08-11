@@ -6,7 +6,7 @@ import Corgi from '../media/corgijpg.jpg'
 import Usagi from '../media/bunnyonly.png'
 import Race from '../media/velocity.png'
 import Wombat from '../media/wombatmain.png'
-import '../css/work.css'
+import '../scss/work.scss'
 
 class Work extends Component {
     constructor(props) {

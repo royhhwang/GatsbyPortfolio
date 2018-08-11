@@ -5,7 +5,7 @@ import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import CorgiVideo from '../media/corgi.mp4'
 import CorgiIcon from '../media/corgijpg.jpg'
-import '../css/project.css'
+import '../scss/project.scss'
 
 const Corgi = () => (
   <div>

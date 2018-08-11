@@ -5,7 +5,7 @@ import Header from '../components/header.js'
 import Arrow from '../media/arrow.png'
 import UsagiVideo from '../media/usagiwarrior.mp4'
 import UsagiIcon from '../media/bunnyonly.png'
-import '../css/project.css'
+import '../scss/project.scss'
 
 const Usagi = () => (
   <div>
