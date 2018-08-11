@@ -35,6 +35,7 @@ const Artsy = () => (
           <br />
         </div>
       </Fade>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros nunc, sed consequat purus semper sit amet. Quisque pretium erat vel sapien sagittis fringilla. Vestibulum vel erat et justo sollicitudin pharetra. Aliquam consequat tempor quam, ac mollis ex molestie eu. Sed ut tellus in libero consequat laoreet sed sed purus. Sed et vehicula lectus. Aenean posuere fermentum ligula. Sed fringilla nunc eu justo pulvinar tempor. Aliquam erat volutpat. Sed fringilla laoreet felis, a sodales nibh vestibulum vel. In ligula odio, sodales eu suscipit sed, viverra sed nibh. Vivamus mollis aliquet dui, sit amet euismod dolor pulvinar non. Suspendisse sem eros, congue sed felis ac, auctor venenatis neque. Pellentesque et lacinia est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tincidunt libero vel odio fringilla suscipit non ut tortor.</p>
     </div>
   </div >
 )

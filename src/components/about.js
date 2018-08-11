@@ -27,42 +27,40 @@ const About = () => (
         <div className="about-para about-two">
             <a href={Resume} className="resume-layer" target="_blank" rel="noopener noreferrer">View Resume</a>
             <hr className="mobile-hide" style={{ margin: 1.5 + 'em' }} />
-            <div className="exp-para">
-                <Fade right>
-                    <p className="exp-title para-top">
-                        The Coding Boot Camp &nbsp;<strong>|</strong>&nbsp;  UCI
-                </p>
-                    <p className="exp-sub">
-                        Student
-                        <br />
-                        Oct 2017 - Jan 2018
-                    </p>
-                    <p className="exp-title">
-                        Wismettac Asian Foods
-                </p>
-                    <p className="exp-sub">
-                        Sales Associate
-                        <br />
-                        Aug 2015 - May 2017
-                    </p>
-                    <p className="exp-title">
-                        New Japan Food Corporation
-                </p>
-                    <p className="exp-sub">
-                        Sales and Marketing Intern
-                        <br />
-                        Jun 2013 - Aug 2013
-                    </p>
-                    <p className="exp-title">
-                        Hadicun Oriental Giant
-                </p>
-                    <p className="exp-sub">
-                        Sales and Business Development Intern
-                        <br />
-                        Jun 2012 - Sep 2012
-                    </p>
-                </Fade>
-            </div>
+            <Fade right>
+                <ul className="exp-para">
+                    <li>
+                        <h3 className="exp-title para-top">
+                            The Coding Boot Camp &nbsp;<strong>|</strong>&nbsp;  UCI
+                        </h3>
+                        <p className="exp-sub">Student</p>
+                        <p>Oct 2017 - Jan 2018</p>
+                    </li>
+
+                    <li>
+                        <h3 className="exp-title">
+                            Wismettac Asian Foods
+                        </h3>
+                        <p className="exp-sub">Sales Associate</p>
+                        <p>Aug 2015 - May 2017</p>
+                    </li>
+
+                    <li>
+                        <h3 className="exp-title">
+                            New Japan Food Corporation
+                        </h3>
+                        <p className="exp-sub">Sales and Marketing Intern</p>
+                        <p>Jun 2013 - Aug 2013</p>
+                    </li>
+                    <li>
+                        <h3 className="exp-title">
+                            Hadicun Oriental Giant
+                        </h3>
+                        <p className="exp-sub">Sales and Business Development Intern</p>
+                        <p>Jun 2012 - Sep 2012</p>
+                    </li>
+                </ul>
+            </Fade>
         </div>
     </div>
 )

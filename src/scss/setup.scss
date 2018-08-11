@@ -1,3 +1,18 @@
 // Variables
-$desktop-up: 'min-width: 960px';
+$small-desktop-up: 'min-width: 960px';
+$large-desktop-up: 'min-width: 1120px';
 
+// Clearfix
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}

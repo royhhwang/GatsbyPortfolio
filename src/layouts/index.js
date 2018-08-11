@@ -14,8 +14,8 @@ const Layout = ({ children, data }) => (
         { name: 'og:image', content: Header },
       ]}>
       <meta property="og:image" content={Header} />
+      <link href="https://fonts.googleapis.com/css?family=Muli:800|Roboto+Mono:300,700" rel="stylesheet" />
     </Helmet>
-
     {children()}
 
   </div >

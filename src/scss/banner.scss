@@ -1,12 +1,64 @@
-.banner-layer {
+@import 'setup';
+
+.banner {
     width: 100%;
-    margin-bottom: 4.5em;
     background-color: #929f71;
 }
 
-.banner-content {
-    display: flex;
+.banner-wrapper {
     align-items: center;
-    justify-content: space-between;
-    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 4rem 1rem 2rem;
+
+    @media screen and ($small-desktop-up) {
+        flex-wrap: nowrap;
+    }
+}
+
+.banner-content {
+    margin-top: -8rem;
+    order: 2;
+    text-align: center;
+
+    @media screen and ($small-desktop-up) {
+        margin: 0 5rem 0 0;
+        max-width: 500px;
+        order: initial;
+        text-align: left;
+    }
+}
+
+.banner-title,
+.banner-subtitle {
+    background: #697647;
+    color: white;
+    display: inline-block;
+    padding: 0.1rem 1rem;
+}
+
+.banner-title {
+    font-size: 6rem;
+
+    &:first-child {
+        position: relative;
+    }
+
+    @media screen and ($small-desktop-up) {
+        font-size: 7rem;
+    }
+
+    @media screen and ($large-desktop-up) {
+        font-size: 8rem;
+    }
+}
+
+.banner-subtitle {
+    font-size: 1.5rem;
+
+    @media screen and ($small-desktop-up) {
+        font-size: 2rem;
+    }
 }

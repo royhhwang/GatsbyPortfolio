@@ -1,85 +1,5 @@
-@font-face {
-    font-family: LemonMilk;
-    src: url("../fonts/LemonMilk.otf") format("opentype");
-}
-
-@font-face {
-    font-family: LemonMilklight;
-    src: url("../fonts/LemonMilklight.otf") format("opentype");
-}
-
-@font-face {
-    font-family: BebasNeue;
-    src: url("../fonts/BebasNeueBold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: BebasNeueLight;
-    src: url("../fonts/BebasNeueLight.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Bebas;
-    src: url("../fonts/Bebas.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Code;
-    src: url("../fonts/CodeBold.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Cabin;
-    src: url("../fonts/CabinRegular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: CrimsonTextBold;
-    src: url("../fonts/CrimsonTextBold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: CrimsonText;
-    src: url("../fonts/CrimsonTextRegular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Montserrat;
-    src: url("../fonts/MontserratRegular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: MontserratLight;
-    src: url("../fonts/MontserratLight.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: MontserratThin;
-    src: url("../fonts/MontserratThin.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Oswald;
-    src: url("../fonts/OswaldRegular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: OswaldLight;
-    src: url("../fonts/OswaldLight.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: Playfair;
-    src: url("../fonts/PlayfairDisplayRegular.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: PlayfairBold;
-    src: url("../fonts/PlayfairDisplayBold.ttf") format("truetype");
-}
-
 html {
-    font-family: sans-serif;
+    font-family: Muli;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
@@ -125,7 +45,6 @@ html {
 
 body {
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: georgia, serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -148,16 +67,9 @@ img {
 }
 
 h1 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    padding: 0;
+    margin: 0 0 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
@@ -166,12 +78,8 @@ h1 {
 h2 {
     margin-right: 0;
     margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+    padding: 0;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
@@ -179,16 +87,9 @@ h2 {
 }
 
 h3 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
@@ -196,16 +97,9 @@ h3 {
 }
 
 h4 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    padding: 0;
+    margin: 0 0 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
@@ -213,16 +107,9 @@ h4 {
 }
 
 h5 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    padding: 0;
+    margin: 0 0 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.85028rem;
@@ -230,16 +117,9 @@ h5 {
 }
 
 h6 {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 1.45rem;
+    padding: 0;
+    margin: 0 0 1.45rem;
     color: inherit;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.78405rem;
@@ -247,14 +127,20 @@ h6 {
 }
 
 p {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    margin-bottom: 0;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+strong {
+    color: red;
+    font-weight: 700;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 @import "utility";

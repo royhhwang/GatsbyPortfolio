@@ -5,13 +5,17 @@ import Face from '../media/rightbanner.jpg'
 import '../scss/banner.scss'
 
 const Banner = () => (
-    <header className="banner-layer">
+    <header className="banner">
         <Nav />
-        <div className="wrapper">
+        <div className="banner-wrapper wrapper">
             <div className="banner-content">
-                <h1>Roy Hwang</h1>
-                <img src={Face} alt="Roy Hwang - Fullstack Developer" />
+                <h1>
+                    <span className="banner-title">Roy</span>
+                    <span className="banner-title">Hwang</span>
+                </h1>
+                <p className="banner-subtitle">Fullstack Developer</p>
             </div>
+                <img src={Face} alt="Roy Hwang - Fullstack Developer" />
         </div>
     </header>
 )
