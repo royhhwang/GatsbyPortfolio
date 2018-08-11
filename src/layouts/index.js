@@ -15,17 +15,9 @@ const Layout = ({ children, data }) => (
       ]}>
       <meta property="og:image" content={Header} />
     </Helmet>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 1250,
-        height: 'auto',
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+
+    {children()}
+
   </div >
 )
 

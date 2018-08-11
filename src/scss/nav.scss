@@ -1,0 +1,76 @@
+@import 'setup';
+
+.nav-block {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and ($desktop-up) {
+        width: 50%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+.nav-link {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition: border-color 0.3s, color 0.3s;
+    vertical-align: middle;
+    width: 6.5em;
+    z-index: 1;
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+.nav-link > span {
+    vertical-align: top;
+
+    svg {
+        vertical-align: top;
+    }
+}
+
+.nav-link::before {
+    -webkit-transform-origin: 10% 100%;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -5em, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
+    background: rgb(255, 0, 0);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: 10% 100%;
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -5em, 0);
+    transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+    width: 150%;
+    z-index: -1;
+}
+
+.nav-link:hover {
+    color: black;
+    border-color: white;
+    cursor: pointer;
+}
+
+.nav-link:hover::before {
+    opacity: 1;
+    background-color: rgba(107, 187, 228, 0.555);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}

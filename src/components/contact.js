@@ -1,11 +1,11 @@
 import React from 'react'
-import { Fade, Flip } from 'react-reveal'
+import { Fade } from 'react-reveal'
 import '../scss/contact.scss'
 import Git from "../media/github.png"
 import Link from "../media/linkedin.png"
 
 const Contact = () => (
-    <div className="contact-layer" id="contact">
+    <div className="contact-layer wrapper" id="contact">
         <Fade top>
             <h1>Contact</h1>
         </Fade>

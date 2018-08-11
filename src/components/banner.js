@@ -1,25 +1,19 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import { Fade, Reveal } from 'react-reveal'
-import Title from '../media/leftbanner.jpg'
+import Nav from './nav.js'
 import Face from '../media/rightbanner.jpg'
 import '../scss/banner.scss'
 
 const Banner = () => (
-    <div className="banner-layer" id="#top">
-        {/* <Fade top>
-            <div className="banner-block title-block">
-                <img src={Title} alt="roy title" id="left-face" />
+    <header className="banner-layer">
+        <Nav />
+        <div className="wrapper">
+            <div className="banner-content">
+                <h1>Roy Hwang</h1>
+                <img src={Face} alt="Roy Hwang - Fullstack Developer" />
             </div>
-        </Fade> */}
-        {/* <Fade right> */}
-            <div className="banner-block face-block">
-                <a href="#about">
-                    <img src={Face} alt="roy face" id="right-face" />
-                </a>
-            </div>
-        {/* </Fade> */}
-    </div>
+        </div>
+    </header>
 )
 
 export default Banner

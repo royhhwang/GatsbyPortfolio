@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Fade } from 'react-reveal'
-import Header from '../components/header.js'
+import Nav from '../components/nav.js'
 import Arrow from '../media/arrow.png'
 import UsagiVideo from '../media/usagiwarrior.mp4'
 import UsagiIcon from '../media/bunnyonly.png'
@@ -9,7 +9,7 @@ import '../scss/project.scss'
 
 const Usagi = () => (
   <div>
-    <Header />
+    <Nav />
     <div className="display-layer">
       <Link className="back-button icon-spin"
         to="/#projects"

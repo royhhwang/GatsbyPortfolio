@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Fade } from 'react-reveal'
-import Header from '../components/header.js'
+import Nav from '../components/nav.js'
 import Arrow from '../media/arrow.png'
 import WombatVideo from '../media/wombat.mp4'
 import WombatIcon from '../media/wombatmain.png'
@@ -9,7 +9,7 @@ import '../scss/project.scss'
 
 const Wombat = () => (
   <div>
-    <Header />
+    <Nav />
     <div className="display-layer">
       <Link className="back-button icon-spin"
         to="/#projects"

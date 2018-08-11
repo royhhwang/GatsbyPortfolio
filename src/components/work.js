@@ -78,7 +78,7 @@ class Work extends Component {
         })
 
         return (
-            <div>
+            <div className="wrapper">
                 <Fade left>
                     <div className="work-layer" id="projects">
                         <h1>Projects</h1>

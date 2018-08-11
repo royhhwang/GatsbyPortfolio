@@ -4,7 +4,7 @@ import Resume from '../media/resume.pdf'
 import '../scss/about.scss'
 
 const About = () => (
-    <div className="about-layer" id="about">
+    <div className="about-layer wrapper" id="about">
         <Fade top>
             <h1>About</h1>
         </Fade>
