@@ -1,6 +1,7 @@
 import React from 'react'
 import { Fade, Flip } from 'react-reveal'
 import Resume from '../media/resume.pdf'
+import Background from '../media/banner-bg.jpg'
 import '../scss/about.scss'
 
 const About = () => (
@@ -60,6 +61,10 @@ const About = () => (
                             <p className="exp-sub">Jun 2012 - Sep 2012</p>
                         </li>
                     </ul>
+
+                    <div className="leaves-btn" style={{backgroundImage: "url(" + Background  + ")"}}>
+                        <a href={Resume} className="leaves-btn-link" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    </div>
                 </div>
             </Fade>
         </div>
