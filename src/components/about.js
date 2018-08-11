@@ -12,23 +12,19 @@ const About = () => (
         <div className="about-content">
             <Fade left>
                 <div className="about-para about-one">
-                    <p>I'm a <strong>Full Stack Developer</strong> and <strong>Front End Designer</strong> proficient in JavaScript and the MERN stack.
-                        I build stunning designs and interfaces using my unique mix of <strong>game programming and problem-solving skills.</strong>
-                        <strong> Games</strong> have been a big part of my life, and its impact shows through my work.
-                        I love to blend the two together to create <strong>visual and interactive</strong> artpieces.
+                    <p>I’m a <strong>full stack developer</strong> specializing in <strong>Javascript</strong> and the <strong>MERN</strong> stack. A gamer at heart, I bring experience in game programming and design to solve problems with imaginative, out-of-the-box solutions. I'm as happy doing <strong>Unity 3D</strong> as I am <strong>CSS</strong>.
+                    </p>
+                    <br />
+                    <p>
+                        In a past life, I worked as a <strong>jack-of-all-trades</strong> sales associate managing direct relationships with 120+ companies in the LA region, including Nobu, Hilton, and _FILL IN HERE__.
                     </p>
                     <p className="about-bottom">
-                        In a previous life, I worked extensively as a <strong>sales associate</strong>, an invaluable experience that honed my organizational and interpersonal skills.
-                        <br />
-                        <br />
-                        When I'm not coding, I'm out hitting the gym, hiking with Pokemon Go, or lounging at Starbucks with a cold drink.
+                        I'm <strong>currently seeking</strong> a creative role that will allow me to blend my passions for interactive UI and game design. Happy to relocate for my next adventure.
                     </p>
                 </div>
             </Fade>
             <Fade right>
                 <div className="about-para about-two">
-                {/* <a href={Resume} className="resume-layer" target="_blank" rel="noopener noreferrer">View Resume</a> */}
-                {/* <hr className="mobile-hide" style={{ margin: 1.5 + 'em' }} /> */}
                     <ul className="exp-para">
                         <li className="exp-para-item">
                             <h3 className="exp-title para-top">
