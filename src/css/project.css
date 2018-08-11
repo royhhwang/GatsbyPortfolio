@@ -5,7 +5,7 @@
   padding-top: 1em;
   position: relative; }
 
-.back-button img {
+.dark-green-btn img {
   width: 1em;
   right: 1em; }
 
@@ -129,7 +129,7 @@
     font-size: 30px;
     padding: 0; }
 
-  .back-button img {
+  .dark-green-btn img {
     width: 0.5em;
     height: 0.5em; }
 

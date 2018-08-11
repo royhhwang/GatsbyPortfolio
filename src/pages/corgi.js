@@ -11,7 +11,7 @@ const Corgi = () => (
   <div>
     <Nav />
     <div className="display-layer">
-      <Link className="back-button icon-spin"
+      <Link className="dark-green-btn icon-spin"
         to="/#projects"
       >
         <Fade top>

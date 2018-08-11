@@ -57,6 +57,7 @@
 .project-title {
     color: $orange;
     padding: 0.25em 0 0 0.4em;
+    transition: color $fast-speed;
 }
 
 .img-filler {
@@ -116,6 +117,10 @@
 
     .project-thumbnail {
         transform: scale(1.1); // to scale up the image on hover
+    }
+
+    .project-title {
+        color: $bright-green;
     }
 }
 

@@ -29,7 +29,7 @@
     transition: border-color 0.3s, color 0.3s;
     vertical-align: middle;
     z-index: 1;
-    font-family: "Roboto Mono";
+    @include Roboto;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -72,11 +72,12 @@
 .nav-link:hover {
     border-color: white;
     cursor: pointer;
+    color: $bg-green;
 }
 
 .nav-link:hover::before {
     opacity: 1;
-    background: #a6d766;
+    background: $bright-green;
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);

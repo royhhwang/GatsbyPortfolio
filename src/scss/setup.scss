@@ -5,9 +5,14 @@ $large-desktop-up: 'min-width: 1120px';
 
 // Colors
 $light-gray: #d7d7d7;
-$orange: #ff6700;
+$orange: #ff4400;
+$bright-green: #beff69;
+
+$bg-green: #96a17a;
+$text-bg-green: #768352;
 
 // Transition speeds
+$fast-speed: 0.2s;
 $med-speed: 0.3s;
 
 // Mixins
@@ -25,4 +30,8 @@ $med-speed: 0.3s;
     height: 0;
     visibility: hidden;
   }
+}
+
+@mixin Roboto {
+  font-family: "Roboto Mono", sans-serif;
 }

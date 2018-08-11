@@ -5,9 +5,9 @@ import "../scss/nav.scss";
 const Nav = () => (
     <nav className="nav-block">
         <Link className="nav-link"
-            to="/#contact"
+            to="/"
         >
-            Contact
+            Home
         </Link>
         <Link className="nav-link"
             to="/#about"
@@ -20,9 +20,9 @@ const Nav = () => (
             Projects
         </Link>
         <Link className="nav-link"
-            to="/"
+            to="/#contact"
         >
-            Home
+            Contact
         </Link>
     </nav>
 )
