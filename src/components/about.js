@@ -58,8 +58,8 @@ const About = () => (
                         </li>
                     </ul>
 
-                    <div className="leaves-btn" style={{backgroundImage: "url(" + Background  + ")"}}>
-                        <a href={Resume} className="leaves-btn-link" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    <div className="leaves-button" style={{backgroundImage: "url(" + Background  + ")"}}>
+                        <a href={Resume} className="leaves-button-link" target="_blank" rel="noopener noreferrer">View Resume</a>
                     </div>
                 </div>
             </Fade>

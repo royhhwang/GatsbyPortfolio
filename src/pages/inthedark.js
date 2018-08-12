@@ -14,7 +14,7 @@ const Dark = () => (
       <Link className="icon-spin"
         to="/#projects"
       >
-        <span className="dark-green-btn">Back</span>
+        <span className="dark-green-button">Back</span>
       </Link>
       <Fade bottom>
         <h1 className="display-title"><span>In the Dark</span></h1>
@@ -35,9 +35,9 @@ const Dark = () => (
           <div className="half-display text-content">
             <img src={DarkIcon} alt="In the Dark Page" className="round" />
             <br />
-            <a className="dark-green-btn icon-spin" href="https://royhhwang.github.io/inthedark/?" target="_blank" rel="noopener noreferrer">The Site</a>
+            <a className="dark-green-button icon-spin" href="https://royhhwang.github.io/inthedark/?" target="_blank" rel="noopener noreferrer">The Site</a>
             <br />
-            <a className="dark-green-btn icon-spin" href="https://github.com/royhhwang/inthedark/" target="_blank" rel="noopener noreferrer">The Repo</a>
+            <a className="dark-green-button icon-spin" href="https://github.com/royhhwang/inthedark/" target="_blank" rel="noopener noreferrer">The Repo</a>
             <br />
           </div>
         </Fade>

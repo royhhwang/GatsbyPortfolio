@@ -11,7 +11,7 @@ const Wombat = () => (
   <div>
     <Nav />
     <div className="display-layer">
-      <Link className="dark-green-btn icon-spin"
+      <Link className="dark-green-button icon-spin"
         to="/#projects"
       >
         <Fade top>

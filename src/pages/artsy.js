@@ -13,7 +13,7 @@ const Artsy = () => (
       <Link className="icon-spin"
         to="/#projects"
       >
-        <span className="dark-green-btn">Back</span>
+        <span className="dark-green-button">Back</span>
       </Link>
       <Fade bottom>
         <h1 className="display-title"><span>Artsy</span></h1>
@@ -34,9 +34,9 @@ const Artsy = () => (
           <div className="half-display text-content">
             <img src={ArtsyIcon} alt="Artsy Page"/>
             <br />
-            <a className="dark-green-btn icon-spin" href="https://artsyapi.herokuapp.com/" target="_blank" rel="noopener noreferrer">The Site</a>
+            <a className="dark-green-button icon-spin" href="https://artsyapi.herokuapp.com/" target="_blank" rel="noopener noreferrer">The Site</a>
             <br />
-            <a className="dark-green-btn icon-spin" href="https://github.com/royhhwang/artsyapi" target="_blank" rel="noopener noreferrer">The Repo</a>
+            <a className="dark-green-button icon-spin" href="https://github.com/royhhwang/artsyapi" target="_blank" rel="noopener noreferrer">The Repo</a>
             <br />
           </div>
         </Fade>

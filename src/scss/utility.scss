@@ -24,7 +24,7 @@
   @include clearfix;
 }
 
-.dark-green-btn {
+.dark-green-button {
   @include Roboto;
   background-color: $text-bg-green;
   color: #fff;
@@ -35,43 +35,32 @@
   text-transform: uppercase;
 }
 
-.leaves-btn {
+.leaves-button {
+  background-blend-mode: soft-light;
+  background-color: #788655;
   background-size: 140%;
   display: inline-block;
-  position: relative;
+  transition: transform $med-speed, box-shadow $med-speed;
 
-  .leaves-btn-link {
+  .leaves-button-link {
     @include Roboto;
     @include smooth;
     color: $bright-green;
     display: block;
     font-weight: 700;
     letter-spacing: 0.1em;
-    padding: 1em 2em;
-    position: relative;
+    padding: 1.25em 2.25em;
     text-transform: uppercase;
-    z-index: 1;
-  }
-
-  &:after {
-    background-color: #6f7e47;
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0.7;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    transition: color $med-speed, background-color $med-speed;
   }
 
   &:hover {
-    .leaves-btn-link {
-      color: $bg-green;
-    }
+    transform: scale(1.1);
+    box-shadow: 0 24px 88px -8px rgba(30,30,30,0.352);
 
-    &::after {
+    .leaves-button-link {
       background-color: $bright-green;
-      opacity: 1;
+      color: $bg-green;
     }
   }
 }
