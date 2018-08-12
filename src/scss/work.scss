@@ -37,17 +37,21 @@
     .project-thumbnail {
         opacity: 1;
     }
+
+    .project-title {
+        color: $bright-green;
+    }
 }
 
 .project-thumbnail {
+    display: block;
     opacity: 0.5;
     transition: opacity $med-speed;
 }
 
 .work-link {
     display: block;
-    
-    overflow: hidden;
+    background: #fff;
 }
 
 .project-image {
@@ -108,18 +112,11 @@
     transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
     -webkit-transform-origin: 0% 100%;
     transform-origin: 0% 100%;
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
-    transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
-}
-
-.fade-box:hover {
-    .project-title {
-        color: $bright-green;
-    }
+    -webkit-transition: -webkit-transform 0.5s, background-color 0.5s;
+    transition: transform 0.5s, background-color 0.5s;
 }
 
 .fade-box:hover::before {
-    opacity: 1;
     background: linear-gradient(120deg, #AAE3AB, #A3D95B);
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
