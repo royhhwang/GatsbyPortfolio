@@ -1,7 +1,7 @@
 @import 'setup';
 
 html {
-    font-family: Muli, Arial, Helvetica, sans-serif;
+    @include Muli;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;

@@ -27,11 +27,9 @@ const Artsy = () => (
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <span style={{ fontSize: 22 + 'px' }}>Artist and Artwork Gallery</span>
-            <br />
-            <strong><span style={{ fontSize: 20 + 'px' }}>React.js | Artsy | Bootstrap</span></strong>
-            <br />
-            ArtsyAPI is a straightforward, sleek webpage for easy content display and categorization.
+            <h2 className="heading">Artist and Artwork Gallery</h2>
+            <p className="tech"><strong>React.js | Artsy | Bootstrap</strong></p>
+            <p className="blurb">ArtsyAPI is a straightforward, sleek webpage for easy content display and categorization.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
