@@ -11,7 +11,7 @@ const Banner = () => (
         <div className="banner-wrapper wrapper">
             <div className="banner-content">
                 <h1>
-                    <Fade left>
+                    <Fade top>
                         <span className="banner-title">Roy</span>
                         <span className="banner-title">Hwang</span>
                     </Fade>
@@ -20,7 +20,7 @@ const Banner = () => (
                     <p className="banner-subtitle">Fullstack Developer</p>
                 </Fade>
             </div>
-            <Fade right>
+            <Fade>
                 <img className="banner-img" src={Face} alt="Roy Hwang - Fullstack Developer" />
             </Fade>
         </div>

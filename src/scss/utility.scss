@@ -2,7 +2,7 @@
 
 // Utility classes
 a:-webkit-any-link {
-    color: black;
+    color: white;
 }
 
 .wrapper {
@@ -30,7 +30,6 @@ a:-webkit-any-link {
 
 .dark-green-button {
     @include Roboto;
-
     background-color: $text-bg-green;
     color: #fff;
     font-size: 0.8rem;
