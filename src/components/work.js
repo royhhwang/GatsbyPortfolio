@@ -6,7 +6,7 @@ import Corgi from '../media/corgijpg.jpg'
 import Usagi from '../media/bunnyonly.png'
 import Race from '../media/velocity.png'
 import Wombat from '../media/wombatmain.png'
-import '../css/work.css'
+import '../scss/work.scss'
 
 class Work extends Component {
     constructor(props) {
@@ -58,14 +58,14 @@ class Work extends Component {
         const projectList = this.state.projects.map((work, index) => {
             return (
                 <div className="project-blocks fade-box" key={index}>
-                    <a href={work.link}>
+                    <a className="work-link" href={work.link}>
                         <div className="project-image">
                             <Fade bottom>
                                 <div className="img-filler">&nbsp;</div>
                                 <h2 className="project-title">{work.name}</h2>
                             </Fade>
                         </div>
-                        <img src={work.image} alt={work.descript} />
+                        <img className="project-thumbnail" src={work.image} alt={work.descript} />
                         <Reveal effect="fade-start">
                             <div>
                                 &nbsp;
@@ -78,11 +78,9 @@ class Work extends Component {
         })
 
         return (
-            <div>
+            <div className="wrapper project-wrapper" id="projects">
                 <Fade left>
-                    <div className="work-layer" id="projects">
-                        <h1>Projects</h1>
-                    </div>
+                    <h1 className="section-header">Projects</h1>
                 </Fade>
                 <Fade>
                     <div className="project-layer">

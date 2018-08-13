@@ -1,0 +1,37 @@
+// Breakpoints
+$large-tablet-up: 'min-width: 720px';
+$small-desktop-up: 'min-width: 960px';
+$large-desktop-up: 'min-width: 1120px';
+
+// Colors
+$light-gray: #d7d7d7;
+$orange: #ff4400;
+$bright-green: #beff69;
+
+$bg-green: #96a17a;
+$text-bg-green: #768352;
+
+// Transition speeds
+$fast-speed: 0.2s;
+$med-speed: 0.3s;
+
+// Mixins
+@mixin smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+@mixin Roboto {
+  font-family: "Roboto Mono", sans-serif;
+}

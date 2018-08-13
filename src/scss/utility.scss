@@ -1,0 +1,71 @@
+@import "setup";
+
+// Utility classes
+a:-webkit-any-link {
+    color: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 0rem 1rem;
+    width: 100%;
+}
+
+.section-header {
+    color: $light-gray;
+    font-size: 5em;
+    overflow: hidden;
+    padding: 4rem 0 2rem;
+    width: 100%;
+
+    @media screen and ($large-tablet-up) {
+        font-size: 6em;
+    }
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.dark-green-button {
+    @include Roboto;
+    background-color: $text-bg-green;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    padding: 0.2em 0.8em;
+    text-transform: uppercase;
+}
+
+.leaves-button {
+    background-blend-mode: soft-light;
+    background-color: #788655dc;
+    background-size: 140%;
+    display: inline-block;
+    transition: transform $med-speed, box-shadow $med-speed;
+
+    .leaves-button-link {
+        @include Roboto;
+        @include smooth;
+
+        color: $bright-green;
+        display: block;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 1.25em 2.25em;
+        text-transform: uppercase;
+        transition: color $med-speed, background-color $med-speed;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
+
+        .leaves-button-link {
+            background-color: $bright-green;
+            color: $bg-green;
+        }
+    }
+}

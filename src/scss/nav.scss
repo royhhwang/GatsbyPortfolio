@@ -1,0 +1,91 @@
+@import "setup";
+
+.nav-block {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    @media screen and ($small-desktop-up) {
+        width: 50%;
+        max-width: 630px;
+    }
+}
+
+.nav-link {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    -webkit-transition: border-color 0.3s, color 0.3s;
+    color: #fff;
+    overflow: hidden;
+    padding: 2em 1em 1em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition: border-color 0.3s, color 0.3s;
+    vertical-align: middle;
+    z-index: 1;
+
+    @include Roboto;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+
+    @media screen and ($small-desktop-up) {
+        padding-top: 2em;
+    }
+
+    @media screen and ($large-tablet-up) {
+        font-size: 0.9rem;
+    }
+}
+
+.nav-link:focus {
+    outline: none;
+}
+
+.nav-link > span {
+    vertical-align: top;
+
+    svg {
+        vertical-align: top;
+    }
+}
+
+.nav-link::before {
+    -webkit-transform-origin: 10% 100%;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -5em, 0);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
+    background: #ffae5d;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: 10% 100%;
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -5em, 0);
+    transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+    width: 150%;
+    z-index: -1;
+}
+
+.nav-link:hover {
+    border-color: white;
+    cursor: pointer;
+    color: $bg-green;
+}
+
+.nav-link:hover::before {
+    opacity: 1;
+    background: $bright-green;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}

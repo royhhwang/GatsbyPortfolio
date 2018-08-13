@@ -1,68 +1,68 @@
 import React from 'react'
 import { Fade, Flip } from 'react-reveal'
 import Resume from '../media/resume.pdf'
-import '../css/about.css'
+import Background from '../media/banner-bg.jpg'
+import '../scss/about.scss'
 
 const About = () => (
-    <div className="about-layer" id="about">
+    <div className="about-layer wrapper" id="about">
         <Fade top>
-            <h1>About</h1>
+            <h1 className="section-header">About</h1>
         </Fade>
-        <Fade left>
-            <div className="about-para about-one">
-                <p>I'm a <strong>Full Stack Developer</strong> and <strong>Front End Designer</strong> proficient in JavaScript and the MERN stack.
-                    I build stunning designs and interfaces using my unique mix of <strong>game programming and problem-solving skills.</strong>
-                    <strong> Games</strong> have been a big part of my life, and its impact shows through my work.
-                    I love to blend the two together to create <strong>visual and interactive</strong> artpieces.
-                </p>
-                <hr style={{ marginTop: 1 + 'em', marginBottom: 1 + 'em' }} />
-                <p className="about-bottom">
-                    In a previous life, I worked extensively as a <strong>sales associate</strong>, an invaluable experience that honed my organizational and interpersonal skills.
+        <div className="about-content">
+            <Fade left>
+                <div className="about-para about-one">
+                    <p>I’m a <strong>full stack developer</strong> specializing in <strong>Javascript</strong> and the <strong>MERN</strong> stack. A gamer at heart, I bring experience in game programming and design to solve problems with imaginative, out-of-the-box solutions. I'm as happy doing <strong>Unity 3D</strong> as I am <strong>CSS</strong>.
+                    </p>
                     <br />
-                    <br />
-                    When I'm not coding, I'm out hitting the gym, hiking with Pokemon Go, or lounging at Starbucks with a cold drink.
-                </p>
-            </div>
-        </Fade>
-        <div className="about-para about-two">
-            <a href={Resume} className="resume-layer" target="_blank" rel="noopener noreferrer">View Resume</a>
-            <hr className="mobile-hide" style={{ margin: 1.5 + 'em' }} />
-            <div className="exp-para">
-                <Fade right>
-                    <p className="exp-title para-top">
-                        The Coding Boot Camp &nbsp;<strong>|</strong>&nbsp;  UCI
-                </p>
-                    <p className="exp-sub">
-                        Student
-                        <br />
-                        Oct 2017 - Jan 2018
+                    <p>
+                        In a past life, I worked as a <strong>jack-of-all-trades</strong> sales associate managing direct relationships with 120+ companies in the LA region, including Nobu, Matsuhisa, and the Marriott Hotel.
                     </p>
-                    <p className="exp-title">
-                        Wismettac Asian Foods
-                </p>
-                    <p className="exp-sub">
-                        Sales Associate
-                        <br />
-                        Aug 2015 - May 2017
+                    <p className="about-bottom">
+                        I'm <strong>currently seeking</strong> a creative role that will allow me to blend my passions for interactive UI and game design. Happy to relocate for my next adventure.
                     </p>
-                    <p className="exp-title">
-                        New Japan Food Corporation
-                </p>
-                    <p className="exp-sub">
-                        Sales and Marketing Intern
-                        <br />
-                        Jun 2013 - Aug 2013
-                    </p>
-                    <p className="exp-title">
-                        Hadicun Oriental Giant
-                </p>
-                    <p className="exp-sub">
-                        Sales and Business Development Intern
-                        <br />
-                        Jun 2012 - Sep 2012
-                    </p>
-                </Fade>
-            </div>
+                </div>
+            </Fade>
+            <Fade right>
+                <div className="about-para about-two">
+                    <ul className="exp-para">
+                        <li className="exp-para-item">
+                            <h3 className="exp-title para-top">
+                                The Coding Boot Camp &nbsp;|&nbsp;  UCI
+                            </h3>
+                            <p className="exp-sub">Student</p>
+                            <p className="exp-sub">Oct 2017 - Jan 2018</p>
+                        </li>
+
+                        <li className="exp-para-item">
+                            <h3 className="exp-title">
+                                Wismettac Asian Foods
+                            </h3>
+                            <p className="exp-sub">Sales Associate</p>
+                            <p className="exp-sub">Aug 2015 - May 2017</p>
+                        </li>
+
+                        <li className="exp-para-item">
+                            <h3 className="exp-title">
+                                New Japan Food Corporation
+                            </h3>
+                            <p className="exp-sub">Sales and Marketing Intern</p>
+                            <p className="exp-sub">Jun 2013 - Aug 2013</p>
+                        </li>
+                        <li className="exp-para-item">
+                            <h3 className="exp-title">
+                                Hadicun Oriental Giant
+                            </h3>
+                            <p className="exp-sub">Sales and Business Development Intern</p>
+                            <p className="exp-sub">Jun 2012 - Sep 2012</p>
+                        </li>
+                    </ul>
+
+                    <div className="leaves-button" style={{backgroundImage: "url(" + Background  + ")"}}>
+                        <a href={Resume} className="leaves-button-link" target="_blank" rel="noopener noreferrer">View Resume</a>
+                    </div>
+                </div>
+            </Fade>
         </div>
     </div>
 )

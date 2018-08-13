@@ -1,52 +1,67 @@
-.banner-layer {
-  width: 100%;
-  padding-bottom: 4.5em; }
+.banner {
+  background-attachment: fixed;
+  background-size: 40%;
+  position: relative;
+  width: 50%; }
+  .banner:before {
+    background-color: #96a17a;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.88;
+    position: absolute;
+    top: 0;
+    width: 100%; }
 
-.banner-block {
+.banner-wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 1rem 3rem; }
+  @media screen and (min-width: 960px) {
+    .banner-wrapper {
+      flex-wrap: nowrap; } }
+
+.banner-content {
+  margin-top: -8rem;
+  order: 2;
+  z-index: 1;
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .banner-content {
+      margin: 0 5rem 0 0;
+      max-width: 500px;
+      order: initial;
+      text-align: left; } }
+
+.banner-title,
+.banner-subtitle {
+  background: #768352;
+  color: white;
   display: inline-block;
-  position: relative; }
+  padding: 0.1rem 1rem; }
 
-.banner-block {
-  margin-top: 2em;
-  border-left: solid transparent 7px;
-  border-right: solid transparent 7px; }
+.banner-title {
+  font-size: 6rem; }
+  .banner-title:first-child {
+    position: relative; }
+  @media screen and (min-width: 960px) {
+    .banner-title {
+      font-size: 7rem; } }
+  @media screen and (min-width: 1120px) {
+    .banner-title {
+      font-size: 8rem; } }
 
-.title-block {
-  width: 67%; }
+.banner-subtitle {
+  font-size: 1.5rem; }
+  @media screen and (min-width: 960px) {
+    .banner-subtitle {
+      font-size: 2rem; } }
 
-.title-block img {
-  min-height: 34em;
-  max-height: 34em; }
-
-.face-block {
-  min-width: 33%;
-  max-width: 33%; }
-
-.face-block img {
-  min-height: 34em;
-  max-height: 34em;
-  opacity: 1;
-  transition: opacity 0.5s;
-  -webkit-transition: opacity 0.5s;
-  backface-visibility: hidden; }
-
-.face-block img:hover {
-  opacity: 0.6; }
-
-@media screen and (max-width: 1050px) {
-  .banner-block img {
-    min-height: 25em;
-    max-height: 25em; }
-
-  .face-block img {
-    min-width: 100%;
-    max-width: 100%; } }
-@media screen and (max-width: 700px) {
-  .banner-block img {
-    min-height: 15em;
-    max-height: 15em; }
-
-  .banner-block {
-    border: solid transparent 2px; } }
+.banner-img {
+  filter: saturate(110%);
+  max-height: 580px; }
 
 /*# sourceMappingURL=banner.css.map */

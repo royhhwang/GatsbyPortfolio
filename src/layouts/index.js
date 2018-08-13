@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../media/header.jpg'
-import '../css/index.css'
+import '../scss/index.scss'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -14,18 +14,10 @@ const Layout = ({ children, data }) => (
         { name: 'og:image', content: Header },
       ]}>
       <meta property="og:image" content={Header} />
+      <link href="https://fonts.googleapis.com/css?family=Muli:800|Roboto+Mono:300,700" rel="stylesheet" />
     </Helmet>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 1250,
-        height: 'auto',
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    {children()}
+
   </div >
 )
 

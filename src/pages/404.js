@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import '../css/404.css'
+import '../scss/404.scss'
 
 const NotFoundPage = () => (
   <div className="error-layer">

@@ -1,20 +1,20 @@
-.header-layer {
+.nav-layer {
   margin: 0 auto;
   max-width: 1250px;
   padding: 4.5em 1rem 3rem 1rem; }
 
-.header-layer h1 {
+.nav-layer h1 {
   margin: 0; }
 
-.header-block a {
-  color: rgba(0, 0, 0, 0.8);
+.nav-block a {
+  color: blue;
   float: right;
   font-size: 16px;
   text-decoration: none;
   padding-right: 1em;
   padding-left: 1em; }
 
-.header-link {
+.nav-link {
   border: none;
   width: 6.5em;
   padding: 1em 0 1em 0;
@@ -33,15 +33,15 @@
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
-.header-link:focus {
+.nav-link:focus {
   outline: none; }
 
-.header-link > span {
+.nav-link > span {
   vertical-align: top; }
-  .header-link > span svg {
+  .nav-link > span svg {
     vertical-align: top; }
 
-.header-link::before {
+.nav-link::before {
   content: '';
   position: absolute;
   top: 0;
@@ -57,12 +57,12 @@
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s; }
 
-.header-link:hover {
+.nav-link:hover {
   color: black;
   border-color: white;
   cursor: pointer; }
 
-.header-link:hover::before {
+.nav-link:hover::before {
   opacity: 1;
   background-color: rgba(107, 187, 228, 0.555);
   -webkit-transform: rotate3d(0, 0, 1, 0deg);
@@ -71,17 +71,15 @@
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
 
 @media screen and (max-width: 1050px) {
-  .header-block {
+  .nav-block {
     width: 100%;
     text-align: center; }
 
-  .header-block a {
+  .nav-block a {
     width: 25%;
     display: inline-block;
     white-space: nowrap;
     font-size: 12px; }
 
-  .header-layer {
+  .nav-layer {
     padding: 2em 0 0 0; } }
-
-/*# sourceMappingURL=header.css.map */

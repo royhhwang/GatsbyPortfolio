@@ -7,6 +7,7 @@
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2"
   },
@@ -18,7 +19,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "style": "sass --watch src/scss:src/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
