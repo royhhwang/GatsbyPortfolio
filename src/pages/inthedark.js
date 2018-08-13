@@ -32,7 +32,7 @@ const Dark = () => (
             <strong><span style={{ fontSize: 20 + 'px' }}>React.js | AFrame.js | Parallax.js | 3ds Max</span></strong>
             <br />
             In the Dark takes horror game elements and tropes to build a thrilling web experience.
-            <p style={{ lineHeight: 1.6 + 'em' }}>
+            <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>VR scene building handled through AFrame.js.</li>
@@ -40,7 +40,7 @@ const Dark = () => (
                 <li>Parallax.js adds movement and atmosphere to the world.</li>
                 <li>Models touched-up through 3ds Max.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </Fade>
         <Fade right>

@@ -33,7 +33,7 @@ const Usagi = () => (
             <strong><span style={{ fontSize: 20 + 'px' }}>Unity 3D | 3ds Max</span></strong>
             <br />
             Difficult yet intuitive, Usagi Warrior's gameplay provides extreme highs and lows.
-            <p style={{ lineHeight: 1.6 + 'em' }}>
+            <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Project Manager: Handled development timelines and delegation.</li>
@@ -41,7 +41,7 @@ const Usagi = () => (
                 <li>Visual Editior: Visual Editor: Creation of simple terrain and sky boxes.</li>
                 <li>Level Designer: Aimed for simple, yet precise platforming to encourage sharp judgement and skills.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </Fade>
         <Fade right>

@@ -33,7 +33,7 @@ const Race = () => (
             <strong><span style={{ fontSize: 20 + 'px' }}>Phaser.io | Socket.io</span></strong>
             <br />
             Race Painting is as simple as its name. Grab a friend and paint away!
-            <p style={{ lineHeight: 1.6 + 'em' }}>
+            <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Game Programmer: Responsible for canvassing and car physics rendering. Also handled paint trails and Socket.io location updates.</li>
@@ -41,7 +41,7 @@ const Race = () => (
                 <li>Socket.io in conjunction with Phaser.io allows for multiplayer functionality.</li>
                 <li>MySQL database handles local saves for maps and player position.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </Fade>
         <Fade right>

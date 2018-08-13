@@ -33,14 +33,14 @@ const Wombat = () => (
             <strong><span style={{ fontSize: 20 + 'px' }}>MERN Stack | Sass | Gulp | AJAX</span></strong>
             <br />
             Project Wombat combines Google Maps with BLS employment statistics to create an interactive map of industry potential.
-        <p style={{ lineHeight: 1.6 + 'em' }}>
+            <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Modularized search for high employment rates across Southern California.</li>
                 <li>Removes the tedium of scouring government websites.</li>
                 <li>Showcase of a MERN stack application and compliers Sass and Gulp.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </Fade>
         <Fade right>

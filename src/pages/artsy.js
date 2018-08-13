@@ -32,14 +32,14 @@ const Artsy = () => (
             <strong><span style={{ fontSize: 20 + 'px' }}>React.js | Artsy | Bootstrap</span></strong>
             <br />
             ArtsyAPI is a straightforward, sleek webpage for easy content display and categorization.
-            <p style={{ lineHeight: 1.6 + 'em' }}>
+            <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Modular and quick; designed for mobile first.</li>
                 <li>Scan and shop through a large compilation of artwork.</li>
                 <li>Built through React.js and Bootstrap.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </Fade>
         <Fade right>

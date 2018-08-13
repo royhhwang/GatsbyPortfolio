@@ -32,7 +32,7 @@ const Corgi = () => (
             <strong><span style={{ fontSize: 20 + 'px' }}>React.js | Unity 3D | 3ds Max</span></strong>
             <br />
             Simple, yet challenging puzzles test an applicant's problem-solving skills.
-            <p style={{ lineHeight: 1.6 + 'em' }}>
+            <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Game Programmer: Tasked with creation of menus, transitions, and levels.</li>
@@ -40,7 +40,7 @@ const Corgi = () => (
                 <li>UX/UI Designer: Priority on mobile development scalability.</li>
                 <li>Deployed on AWS.</li>
               </ul>
-            </p>
+            </div>
           </div>
         </Fade>
         <Fade right>
