@@ -50,13 +50,24 @@ a:-webkit-any-link {
         @include Roboto;
         @include smooth;
 
+        align-items: center;
         color: $bright-green;
-        display: block;
+        display: flex;
         font-weight: 700;
         letter-spacing: 0.1em;
         padding: 1.25em 2.25em;
         text-transform: uppercase;
         transition: color $med-speed, background-color $med-speed;
+    }
+
+    .leaves-button-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .leaves-button-label {
+        padding-left: 1em;
+        font-weight: inherit;
     }
 
     &:hover {

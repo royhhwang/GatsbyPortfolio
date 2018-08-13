@@ -58,6 +58,7 @@
 
     &:first-child {
         position: relative;
+        z-index: 1;
     }
 
     @media screen and ($small-desktop-up) {
@@ -79,5 +80,5 @@
 
 .banner-img {
     filter: saturate(150%) brightness(1.2);
-    max-height: 520px;
+    max-height: 560px;
 }

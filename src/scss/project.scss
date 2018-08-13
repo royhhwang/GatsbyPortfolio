@@ -90,6 +90,26 @@
     li {
         list-style-type: circle;
     }
+
+    .heading {
+        font-size: 1.375rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .tech {
+        margin-bottom: 0.3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .tech,
+    .blurb {
+        @include smooth;
+    }
+
+    .blurb {
+        @include Muli;
+    }
 }
 
 .task-content {
@@ -221,7 +241,7 @@
 
 .icon-spin {
     display: inline-block;
-    padding-top: 1em;
+    margin-top: 1em;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
