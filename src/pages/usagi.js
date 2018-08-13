@@ -48,7 +48,7 @@ const Usagi = () => (
           <div className="half-display text-content">
             <img src={UsagiIcon} alt="coding with corgis page" className="round" />
             <br />
-            <a className="dark-green-button icon-spin" href="https://royhhwang.itch.io/usagi-warrior/" target="_blank" rel="noopener noreferrer">The Site</a>
+            <a className="dark-green-button icon-spin" href="https://royhhwang.itch.io/usagi-warrior/" target="_blank" rel="noopener noreferrer">The Game</a>
             <br />
             <a className="dark-green-button icon-spin" href="https://github.com/royhhwang/Project3-RPG/" target="_blank" rel="noopener noreferrer">The Repo</a>
             <br />

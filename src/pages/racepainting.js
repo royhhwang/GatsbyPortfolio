@@ -48,7 +48,7 @@ const Race = () => (
           <div className="half-display text-content">
             <img src={RaceIcon} alt="coding with corgis page" className="round" />
             <br />
-            <a className="dark-green-button icon-spin" href="https://race-painting.herokuapp.com/" target="_blank" rel="noopener noreferrer">The Site</a>
+            <a className="dark-green-button icon-spin" href="https://race-painting.herokuapp.com/" target="_blank" rel="noopener noreferrer">The Game</a>
             <br />
             <a className="dark-green-button icon-spin" href="https://github.com/Ta1yak1/Race-Paint" target="_blank" rel="noopener noreferrer">The Repo</a>
             <br />
