@@ -1,28 +1,32 @@
 .about-layer {
-  font-size: 50px;
-  padding-top: 1em;
-  color: rgba(0, 0, 0, 0.3);
-  position: relative; }
+  position: relative;
+  min-height: 100vh; }
 
-.about-para {
-  line-height: 1.4em;
-  padding: 0 0.5em 0 0.5em;
-  font-size: 20px;
-  font-family: Cabin;
-  color: black;
-  display: inline-block; }
+@media screen and (min-width: 960px) {
+  .about-content {
+    display: flex; } }
 
 .about-bottom {
-  padding-bottom: 0.5em; }
+  border-top: 1px solid #d7d7d7;
+  margin-top: 2rem;
+  padding-bottom: 0.5em;
+  padding-top: 2rem; }
 
 .about-one {
-  width: 67%; }
+  flex-basis: 67%; }
+  .about-one p {
+    font-size: 1.1rem;
+    line-height: 1.6; }
 
 .about-two {
-  width: 33%;
-  position: absolute;
-  font-family: Code;
-  text-align: center; }
+  flex-basis: 33%; }
+  @media screen and (min-width: 960px) {
+    .about-two {
+      margin-left: 2.5rem; } }
+
+.about-one,
+.about-two {
+  margin-bottom: 3rem; }
 
 .resume-layer {
   background: white;
@@ -50,59 +54,42 @@
   transition: border-width 0.3s linear;
   -webkit-transition: border-width 0.3s linear; }
 
-.exp-para {
-  position: relative;
-  font-family: Montserrat;
-  text-align: left !important;
-  padding-left: 1.5em;
-  font-size: 18px;
-  font-weight: bold; }
+.exp-para:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.exp-para-item {
+  float: left;
+  margin-bottom: 2.2rem;
+  width: 100%; }
+  @media screen and (min-width: 720px) {
+    .exp-para-item {
+      width: 50%; } }
+  @media screen and (min-width: 960px) {
+    .exp-para-item {
+      float: none;
+      width: auto; } }
 
 .exp-title {
-  margin: 0; }
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem; }
 
 .exp-sub {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: normal;
-  padding-bottom: 1.8em; }
+  font-size: 0.9rem;
+  line-height: 1.9; }
+  .exp-sub:nth-of-type(2) {
+    color: #b9b9b9; }
 
 @keyframes animatedgradient {
   0% {
     filter: blur(1px) hue-rotate(0deg); }
   100% {
     filter: blur(1px) hue-rotate(360deg); } }
-@media screen and (max-width: 950px) {
-  .exp-para {
-    font-size: 14px; }
-
-  .exp-sub {
-    font-size: 12px; } }
 @media screen and (max-width: 700px) {
-  .about-one {
-    width: 100%; }
-
-  .about-two {
-    position: relative;
-    width: 100%;
-    padding: 1em 0 1em 0.6em;
-    text-align: left; }
-
-  .para-top {
-    padding-top: 2em !important; }
-
-  .exp-para {
-    padding: 0;
-    margin: 0;
-    font-size: 14px; }
-
-  .about-layer {
-    padding-top: 0;
-    font-size: 25px; }
-
-  .about-para {
-    font-size: 16px; }
-
   .resume-layer {
     border: none; }
 

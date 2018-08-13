@@ -2,12 +2,11 @@
 
 .about-layer {
     position: relative;
-    min-height: 100vh;
 }
 
 .about-content {
     @media screen and ($small-desktop-up) {
-        display: flex; // trying to use flexbox more to create layouts
+        display: flex;
     }
 }
 
@@ -19,7 +18,7 @@
 }
 
 .about-one {
-    flex-basis: 67%; // this is the same things as saying "width", but for flexbox children
+    flex-basis: 67%;
 
     p {
         font-size: 1.1rem;

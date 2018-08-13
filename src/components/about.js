@@ -16,7 +16,7 @@ const About = () => (
                     </p>
                     <br />
                     <p>
-                        In a past life, I worked as a <strong>jack-of-all-trades</strong> sales associate managing direct relationships with 120+ companies in the LA region, including Nobu, Hilton, and _FILL IN HERE__.
+                        In a past life, I worked as a <strong>jack-of-all-trades</strong> sales associate managing direct relationships with 120+ companies in the LA region, including Nobu, Matsuhisa, and the Marriott Hotel.
                     </p>
                     <p className="about-bottom">
                         I'm <strong>currently seeking</strong> a creative role that will allow me to blend my passions for interactive UI and game design. Happy to relocate for my next adventure.

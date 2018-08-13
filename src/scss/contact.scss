@@ -1,13 +1,24 @@
-@import 'setup';
+@import "setup";
 
 .contact-layer {
-    min-height: 100vh;
+    min-height: 50vh;
+
+    @media screen and ($large-tablet-up) {
+        min-height: 45vh;
+    }
+}
+
+.contact-title {
+    padding-bottom: 0;
+
+    @media screen and ($large-tablet-up) {
+        padding: 4rem 0 1rem;
+    }
 }
 
 .icon-links {
     color: rgba(0, 0, 0, 0);
     padding: 0.5em 0 0.5em 0;
-    width: 6em;
 }
 
 .icon-links img {
@@ -36,6 +47,14 @@
     font-size: 35px;
     padding-top: 0.1em;
     transform: translateY(-150%);
+
+    @media screen and (max-width: 700px) {
+        .icon-links h3 {
+            font-size: 25px;
+            padding-top: 0.4em;
+            transform: translateY(0%);
+        }
+    }
 }
 
 @keyframes slideLeft {
@@ -52,10 +71,10 @@
 
 .hover-link {
     display: block;
-    padding: 0.2em 0 0.2em 0.2em;
-    margin: 0.2em 0 0.2em 0;
+    padding: 0.5em 0 0.5em 0.2em;
+    margin: 0.4rem 0 0.4rem 0;
     border: none;
-    width: 6em;
+    width: 15rem;
     background: none;
     color: inherit;
     vertical-align: middle;
@@ -70,6 +89,12 @@
     transition: border-color 0.3s, color 0.3s;
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+
+    @media screen and (max-width: 700px) {
+        .hover-link {
+            width: 8em;
+        }
+    }
 }
 
 .hover-link:focus {
@@ -91,10 +116,10 @@
     left: 0;
     width: 150%;
     height: 100%;
-    background: black;
+    background: rgba(0, 0, 0, 0.733);
     z-index: -1;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform: rotate3d(0, 0, 1, -90deg) translate3d(0, -8em, 0);
+    transform: rotate3d(0, 0, 1, -90deg) translate3d(0, -8em, 0);
     -webkit-transform-origin: 14% 100%;
     transform-origin: 14% 100%;
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
@@ -102,9 +127,7 @@
 }
 
 .hover-link:hover {
-    color: black;
     border-color: white;
-    cursor: pointer;
 }
 
 .hover-link:hover::before {
@@ -114,16 +137,4 @@
     transform: rotate3d(0, 0, 1, 0deg);
     -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-
-@media screen and (max-width: 700px) {
-    .hover-link {
-        width: 8em;
-    }
-
-    .icon-links h3 {
-        font-size: 25px;
-        padding-top: 0.4em;
-        transform: translateY(0%);
-    }
 }

@@ -1,4 +1,4 @@
-@import 'setup';
+@import "setup";
 
 .nav-block {
     display: flex;
@@ -21,7 +21,7 @@
     -webkit-transition: border-color 0.3s, color 0.3s;
     color: #fff;
     overflow: hidden;
-    padding: 1em;
+    padding: 2em 1em 1em 1em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -29,14 +29,20 @@
     transition: border-color 0.3s, color 0.3s;
     vertical-align: middle;
     z-index: 1;
+
     @include Roboto;
+
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 
     @media screen and ($small-desktop-up) {
         padding-top: 2em;
+    }
+
+    @media screen and ($large-tablet-up) {
+        font-size: 0.9rem;
     }
 }
 

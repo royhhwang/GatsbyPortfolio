@@ -27,12 +27,23 @@ const Artsy = () => (
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros nunc, sed consequat purus semper sit amet. Quisque pretium erat vel sapien sagittis fringilla. Vestibulum vel erat et justo sollicitudin pharetra. <strong>Aliquam consequat</strong> tempor quam, ac mollis ex molestie eu. Sed ut tellus in libero consequat laoreet sed sed purus. Sed et vehicula lectus. Aenean posuere fermentum ligula. Sed fringilla nunc eu justo pulvinar tempor. Aliquam erat volutpat. Sed fringilla laoreet felis, a sodales nibh vestibulum vel. In ligula odio, sodales eu suscipit sed, viverra sed nibh. Vivamus mollis aliquet dui, sit amet euismod dolor pulvinar non. Suspendisse sem eros, congue sed felis ac, auctor venenatis neque. Pellentesque et lacinia est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tincidunt libero vel odio fringilla suscipit non ut tortor.</p>
+            <span style={{ fontSize: 22 + 'px' }}>Artist and Artwork Gallery</span>
+            <br />
+            <strong><span style={{ fontSize: 20 + 'px' }}> React.js | Artsy | Bootstrap</span></strong>
+            <p style={{ lineHeight: 1.6 + 'em' }}>
+              <br />
+              <ul className="project-text">
+                <li>Modular and quick; designed for mobile first.</li>
+                <li>Search through a large array of creative space artwork.</li>
+                <li>Stylized with Bootstrap.</li>
+                <li>Built in React.</li>
+              </ul>
+            </p>
           </div>
         </Fade>
         <Fade right>
           <div className="half-display text-content">
-            <img src={ArtsyIcon} alt="Artsy Page"/>
+            <img src={ArtsyIcon} alt="Artsy Page" />
             <br />
             <a className="dark-green-button icon-spin" href="https://artsyapi.herokuapp.com/" target="_blank" rel="noopener noreferrer">The Site</a>
             <br />

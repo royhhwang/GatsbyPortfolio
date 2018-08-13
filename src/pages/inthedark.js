@@ -28,7 +28,18 @@ const Dark = () => (
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum eros nunc, sed consequat purus semper sit amet. Quisque pretium erat vel sapien sagittis fringilla. Vestibulum vel erat et justo sollicitudin pharetra. <strong>Aliquam consequat</strong> tempor quam, ac mollis ex molestie eu. Sed ut tellus in libero consequat laoreet sed sed purus. Sed et vehicula lectus. Aenean posuere fermentum ligula. Sed fringilla nunc eu justo pulvinar tempor. Aliquam erat volutpat. Sed fringilla laoreet felis, a sodales nibh vestibulum vel. In ligula odio, sodales eu suscipit sed, viverra sed nibh. Vivamus mollis aliquet dui, sit amet euismod dolor pulvinar non. Suspendisse sem eros, congue sed felis ac, auctor venenatis neque. Pellentesque et lacinia est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tincidunt libero vel odio fringilla suscipit non ut tortor.</p>
+            <span style={{ fontSize: 22 + 'px' }}>Horror Web VR</span>
+            <br />
+            <strong><span style={{ fontSize: 20 + 'px' }}> React.js | AFrame.js | Parallax.js | 3ds Max</span></strong>
+            <p style={{ lineHeight: 1.6 + 'em' }}>
+              <br />
+              <ul className="project-text">
+                <li>Web VR built through AFrame.js and Parallax.js.</li>
+                <li>Combined with IGDB API's game database.</li>
+                <li>React handles mouse events and routing.</li>
+                <li>Models created through 3ds Max.</li>
+              </ul>
+            </p>
           </div>
         </Fade>
         <Fade right>

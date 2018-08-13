@@ -13,7 +13,7 @@
 .project-blocks {
     display: inline-block;
     position: relative;
-    width: calc(33% - 1em);
+    width: calc(33% - 0.8em);
     height: auto;
     margin: 0.7em 0.5em 0.7em 0.5em;
     padding: 0.5em;
@@ -46,6 +46,7 @@
 
 .work-link {
     display: block;
+    
     overflow: hidden;
 }
 

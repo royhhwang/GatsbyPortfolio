@@ -1,4 +1,4 @@
-@import 'setup';
+@import "setup";
 
 .project-main {
     background-color: $bg-green;
@@ -9,8 +9,14 @@
 .display-layer {
     width: 100%;
     color: #fff;
-    padding-top: 3rem;
+    padding-top: 4rem;
     position: relative;
+
+    @media screen and ($large-tablet-up) {
+        .display-layer {
+            padding-top: 3rem;
+        }
+    }
 }
 
 .display-title {
@@ -31,7 +37,7 @@
 
     img {
         width: 100px;
-        height: 100px;
+        height: auto;
     }
 }
 
@@ -50,7 +56,10 @@
         display: flex;
         justify-content: center;
     }
+}
 
+.project-text {
+    padding: 0 0 0 1em;
 }
 
 .project-description,
@@ -64,16 +73,23 @@
     strong {
         color: $bright-green;
     }
+
+    li {
+        list-style-type: square;
+    }
 }
 
 .text-content {
     flex-basis: 10%;
-    margin-left: 3rem;
     text-align: center;
     width: 100%;
 
     .dark-green-button {
         margin-top: 2rem;
+    }
+
+    @media screen and ($large-tablet-up) {
+        margin-left: 3rem;
     }
 }
 
@@ -187,10 +203,18 @@
 
 .icon-spin {
     display: inline-block;
+    padding-top: 1em;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    @media screen and ($large-tablet-up) {
+        font-size: 8px;
+    }
+    @media screen and ($small-desktop-up) {
+        font-size: 11px;
+    }
 }
 
 .icon-spin:hover, .icon-spin:focus, .icon-spin:active {
@@ -202,10 +226,4 @@
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-}
-
-@media screen and (max-width: 700px) {
-    .display-layer {
-        padding-top: 4rem;
-    }
 }
