@@ -13,21 +13,25 @@
     position: relative;
 
     @media screen and ($large-tablet-up) {
-        .display-layer {
-            padding-top: 3rem;
-        }
+        padding-top: 3rem;
     }
 }
 
 .display-title {
-    font-size: 5rem;
-    margin: 5rem 0;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    margin: 3rem 0;
     text-align: center;
 
     span {
         background-color: $bright-green;
         color: $bg-green;
         padding: 0.5rem 2rem;
+    }
+
+    @media screen and ($large-tablet-up) {
+        font-size: 5rem;
+        margin: 5rem 0;
     }
 }
 
@@ -36,8 +40,17 @@
     line-height: 2em;
 
     img {
-        width: 100px;
+        width: 80px;
+        max-height: 80px;
         height: auto;
+    }
+
+    @media screen and ($large-tablet-up) {
+        img {
+            width: 60px;
+            max-height: 60px;
+            height: auto;
+        }
     }
 }
 
@@ -50,7 +63,7 @@
 }
 
 .project-content {
-    padding: 3rem 0 6rem;
+    padding: 3rem 0 5rem;
 
     @media screen and ($large-tablet-up) {
         display: flex;
@@ -75,7 +88,7 @@
     }
 
     li {
-        list-style-type: square;
+        list-style-type: circle;
     }
 }
 
@@ -85,7 +98,7 @@
     width: 100%;
 
     .dark-green-button {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     @media screen and ($large-tablet-up) {
@@ -212,6 +225,7 @@
     @media screen and ($large-tablet-up) {
         font-size: 8px;
     }
+
     @media screen and ($small-desktop-up) {
         font-size: 11px;
     }

@@ -15,7 +15,7 @@ const Artsy = () => (
       >
         <span className="dark-green-button">Back</span>
       </Link>
-      <Fade bottom>
+      <Fade>
         <h1 className="display-title"><span>Artsy</span></h1>
         <div className="video-container wrapper">
           <video className="half-display video-content" controls="true" playsInline muted autoPlay loop>
@@ -29,14 +29,15 @@ const Artsy = () => (
           <div className="project-description">
             <span style={{ fontSize: 22 + 'px' }}>Artist and Artwork Gallery</span>
             <br />
-            <strong><span style={{ fontSize: 20 + 'px' }}> React.js | Artsy | Bootstrap</span></strong>
+            <strong><span style={{ fontSize: 20 + 'px' }}>React.js | Artsy | Bootstrap</span></strong>
+            <br />
+            ArtsyAPI is a straightforward, sleek webpage for easy content display and categorization.
             <p style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Modular and quick; designed for mobile first.</li>
-                <li>Search through a large array of creative space artwork.</li>
-                <li>Stylized with Bootstrap.</li>
-                <li>Built in React.</li>
+                <li>Scan and shop through a large compilation of artwork.</li>
+                <li>Built through React.js and Bootstrap.</li>
               </ul>
             </p>
           </div>
