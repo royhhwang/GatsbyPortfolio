@@ -28,11 +28,9 @@ const Wombat = () => (
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <span style={{ fontSize: 22 + 'px' }}>Location-based Statistics</span>
-            <br />
-            <strong><span style={{ fontSize: 20 + 'px' }}>MERN Stack | Sass | Gulp | AJAX</span></strong>
-            <br />
-            Project Wombat combines Google Maps with BLS employment statistics to create an interactive map of industry potential.
+            <h2 className="heading">Location-based Statistics</h2>
+            <p className="tech"><strong>MERN Stack | Sass | Gulp | AJAX</strong></p>
+            <p className="blurb">Project Wombat combines Google Maps with BLS employment statistics to create an interactive map of industry potential.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">

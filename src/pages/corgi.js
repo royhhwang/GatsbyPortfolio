@@ -27,11 +27,9 @@ const Corgi = () => (
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <span style={{ fontSize: 22 + 'px' }}>Gamifying the Interview Process.</span>
-            <br />
-            <strong><span style={{ fontSize: 20 + 'px' }}>React.js | Unity 3D | 3ds Max</span></strong>
-            <br />
-            Simple, yet challenging puzzles test an applicant's problem-solving skills.
+            <h2 className="heading">Gamifying the Interview Process</h2>
+            <p className="tech"><strong>React.js | Unity 3D | 3ds Max</strong></p>
+            <p className="blurb">Simple, yet challenging puzzles test an applicant's problem-solving skills.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">

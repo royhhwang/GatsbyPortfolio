@@ -22,17 +22,15 @@ const Race = () => (
           <video className="half-display video-content" controls="true" playsInline muted autoPlay loop>
             <source src={RaceVideo} type="video/mp4" />
             Your browser does not support this video!
-      </video>
+        </video>
         </div>
       </Fade>
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <span style={{ fontSize: 22 + 'px' }}>Collaborative Racer</span>
-            <br />
-            <strong><span style={{ fontSize: 20 + 'px' }}>Phaser.io | Socket.io</span></strong>
-            <br />
-            Race Painting is as simple as its name. Grab a friend and paint away!
+            <h2 className="heading">Collaborative Racer</h2>
+            <p className="tech"><strong>Phaser.io | Socket.io</strong></p>
+            <p className="blurb">Race Painting is as simple as its name. Grab a friend and paint away!</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">

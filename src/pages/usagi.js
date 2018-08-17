@@ -28,11 +28,9 @@ const Usagi = () => (
       <div className="project-content">
         <Fade left>
           <div className="project-description">
-            <span style={{ fontSize: 22 + 'px' }}>Frustrating Platformer</span>
-            <br />
-            <strong><span style={{ fontSize: 20 + 'px' }}>Unity 3D | 3ds Max</span></strong>
-            <br />
-            Difficult yet intuitive, Usagi Warrior's gameplay provides extreme highs and lows.
+            <h2 className="heading">Frustrating Platformer</h2>
+            <p className="tech"><strong>Unity 3D | 3ds Max</strong></p>
+            <p className="blurb">Difficult yet intuitive, Usagi Warrior's gameplay provides extreme highs and lows.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
