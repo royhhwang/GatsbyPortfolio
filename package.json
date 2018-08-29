@@ -6,10 +6,8 @@
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
-    "gatsby-plugin-page-creator": "^1.0.1",
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-sass": "^1.0.26",
-    "gatsby-source-filesystem": "^1.5.39",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
     "url-parse": "^1.4.3"
