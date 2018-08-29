@@ -26,12 +26,12 @@
     transition: transform $med-speed, opacity $med-speed, color $med-speed;
 
     @media screen and ($large-tablet-up) {
-        margin: 0 0.5em 0 0.5em;
+        margin: 1em 0.5em 1em 0.5em;
         width: 46.5%;
     }
 
     @media screen and ($small-desktop-up) {
-        margin: 0 3em 0 3em;
+        margin: 1em 3em 1em 3em;
         width:39%;
     }
 
@@ -93,7 +93,9 @@
 
     @media screen and ($large-tablet-up) {
         bottom: 4.5em;
-        left: 3.5em;
+    }
+    @media screen and ($small-desktop-up) {
+        left: 2em;
     }
 }
 
@@ -132,10 +134,9 @@
         width: 6.2rem;
         bottom: 4.5rem;
         font-size: 1.1rem;
-        
     }
     @media screen and ($small-desktop-up) {
-        right: 1.4rem;
+        right: 0.5rem;
     }
 
 }
