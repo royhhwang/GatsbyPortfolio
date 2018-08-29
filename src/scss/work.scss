@@ -1,4 +1,4 @@
-@import 'setup';
+@import "setup";
 
 .project-wrapper {
     margin-bottom: 2rem;
@@ -8,19 +8,37 @@
     padding-bottom: 1.5em;
     font-size: 15px;
     width: 100%;
+
+    @media screen and ($large-tablet-up) {
+        font-size: 15px;
+    }
 }
 
 .project-blocks {
     display: inline-block;
     position: relative;
-    width: calc(33% - 0.8em);
     height: auto;
-    margin: 0.7em 0.5em 0.7em 0.5em;
+    width: 50%;
+    margin: 0;
     padding: 0.5em;
     background-color: rgba(220, 220, 220, 0.6);
     color: black;
     transition: transform $med-speed, opacity $med-speed, color $med-speed;
-    backface-visibility: hidden;
+
+    @media screen and ($large-tablet-up) {
+        margin: 0 0.5em 0 0.5em;
+        width: 46.5%;
+    }
+
+    @media screen and ($small-desktop-up) {
+        margin: 0 3em 0 3em;
+        width:39%;
+    }
+
+    @media screen and ($large-desktop-up) {
+        margin: 0.7em 0.5em 0.7em 0.5em;
+        width: calc(33% - 0.8em);
+    }
 }
 
 .project-blocks:hover, .project-blocks:active {
@@ -28,7 +46,7 @@
     color: white;
     z-index: 2;
     transform: scale(1.06);
-    box-shadow: 0 24px 88px -8px rgba(30,30,30,0.352);
+    box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
 
     .img-filler {
         background-color: black;
@@ -41,12 +59,20 @@
     .project-title {
         color: $bright-green;
     }
+
+    .project-subtitle {
+        display: block;
+        color: $bright-green;
+        background-color: black;
+    }
 }
 
 .project-thumbnail {
     display: block;
     opacity: 0.5;
     transition: opacity $med-speed;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .work-link {
@@ -56,25 +82,77 @@
 
 .project-image {
     position: absolute;
-    bottom: 3em;
-    left: 3.5em;
+    bottom: 0em;
+    left: 0em;
     background-color: transparent;
     padding: 0.5em;
     margin-bottom: 0 !important;
     z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    @media screen and ($large-tablet-up) {
+        bottom: 4.5em;
+        left: 3.5em;
+    }
 }
 
 .project-title {
     color: $orange;
+    padding-top: 0.3em;
+    padding-bottom: 0;
+    font-size: 16px;
+    min-height: 2em;
+    transition: color $fast-speed;
+
+    @media screen and ($large-tablet-up) {
+        padding: 0.25em 0 0 0.4em;
+        font-size: 1.62671rem;
+        min-height: 0;
+    }
+}
+
+.project-subtitle {
+    @include smooth;
+
+    position: absolute;
+    background-color: white;
+    width: 2.8rem;
+    line-height: 1.2rem;
+    bottom: 1rem;
+    right: 0rem;
+    font-size: 0.5rem;
+    color: $orange;
     padding: 0.25em 0 0 0.4em;
     transition: color $fast-speed;
+    z-index: 5;
+
+    @media screen and ($large-tablet-up) {
+        line-height: 1.7rem;
+        width: 6.2rem;
+        bottom: 4.5rem;
+        font-size: 1.1rem;
+        
+    }
+    @media screen and ($small-desktop-up) {
+        right: 1.4rem;
+    }
+
 }
 
 .img-filler {
-    width: 100%;
+    width: 93%;
     height: 3em;
+    max-height: 2em;
     position: absolute;
     background-color: white;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    @media screen and ($large-tablet-up) {
+        width: 99%;
+        max-height: 3em;
+    }
 }
 
 .fade-box {
@@ -82,6 +160,7 @@
     color: inherit;
     position: relative;
     z-index: 1;
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
@@ -133,6 +212,7 @@
     bottom: 0;
     left: 0;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     animation: fadeStart 3s linear forwards;
     -webkit-animation: fadeStart 3s linear forwards;
 }
@@ -176,35 +256,5 @@
         transform: translateY(-200%);
         opacity: 0;
         display: none;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .project-blocks {
-        width: 48%;
-        margin: 0 0.4em 0 0.4em;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .project-title {
-        padding-top: 0.3em;
-        padding-bottom: 0;
-        font-size: 16px;
-        min-height: 2em;
-    }
-
-    .project-image {
-        bottom: 0em;
-        left: 0em;
-    }
-
-    .img-filler {
-        max-height: 2em;
-    }
-
-    .project-blocks {
-        margin: 0;
-        width: 50%;
     }
 }

@@ -1,7 +1,7 @@
 @import "setup";
 
 .contact-layer {
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
 .contact-title {
@@ -13,6 +13,8 @@
 }
 
 .contact-section {
+    @include smooth;
+
     min-width: 13.56rem;
     margin-bottom: 1.5rem;
 }

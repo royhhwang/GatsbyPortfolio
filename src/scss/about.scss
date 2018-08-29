@@ -21,8 +21,12 @@
     flex-basis: 67%;
 
     p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         line-height: 1.6;
+
+        @media screen and ($large-tablet-up) {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -40,11 +44,11 @@
 }
 
 .exp-para {
-    @include clearfix; // this is to clear floated children
+    @include clearfix;
 }
 
 .exp-para-item {
-    float: left; // here are the floated children
+    float: left;
     margin-bottom: 2.2rem;
     width: 100%;
 

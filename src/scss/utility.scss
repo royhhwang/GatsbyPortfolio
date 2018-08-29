@@ -16,11 +16,12 @@ a:-webkit-any-link {
     color: $light-gray;
     font-size: 5em;
     overflow: hidden;
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 1rem;
     width: 100%;
 
     @media screen and ($large-tablet-up) {
         font-size: 6em;
+        padding: 4rem 0 2rem;
     }
 }
 
@@ -30,6 +31,7 @@ a:-webkit-any-link {
 
 .dark-green-button {
     @include Roboto;
+
     background-color: $text-bg-green;
     color: #fff;
     font-size: 0.8rem;
@@ -60,6 +62,20 @@ a:-webkit-any-link {
         transition: color $med-speed, background-color $med-speed;
     }
 
+    .leaves-orange-link {
+        @include Roboto;
+        @include smooth;
+
+        align-items: center;
+        color: $orange;
+        display: flex;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 1.25em 2.25em;
+        text-transform: uppercase;
+        transition: color $med-speed, background-color $med-speed;
+    }
+
     .leaves-button-img {
         width: 40px;
         height: 40px;
@@ -76,7 +92,12 @@ a:-webkit-any-link {
 
         .leaves-button-link {
             background-color: $bright-green;
-            color: $bg-green;
+            color: $bg-green !important;
+        }
+
+        .leaves-orange-link {
+            background-color: $bright-green;
+            color: $bg-green !important;
         }
     }
 }
