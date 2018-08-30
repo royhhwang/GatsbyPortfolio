@@ -18,42 +18,42 @@ class Work extends Component {
                     "image": Artsy,
                     "descript": "artsy image",
                     "link": "/artsy",
-                    "tech": "React.js, Artsy, Bootstrap, Sass"
+                    "tech": "React.js Artsy Bootstrap Sass"
                 },
                 {
                     "name": "In the Dark",
                     "image": Ring,
                     "descript": "ring image",
                     "link": "/inthedark",
-                    "tech": "React.js, AFrame, Parallax, 3ds Max"
+                    "tech": "React.js AFrame Parallax 3ds Max"
                 },
                 {
                     "name": "Corgi",
                     "image": Corgi,
                     "descript": "corgi image",
                     "link": "/corgi",
-                    "tech": "React.js, Unity 3D, 3ds Max"
+                    "tech": "React.js Unity 3D 3ds Max"
                 },
                 {
                     "name": "Usagi",
                     "image": Usagi,
                     "descript": "usagi image",
                     "link": "/usagi",
-                    "tech": "Unity 3d, 3ds Max"
+                    "tech": "Unity 3D 3ds Max"
                 },
                 {
                     "name": "Race Painting",
                     "image": Race,
                     "descript": "race painting image",
                     "link": "/racepainting",
-                    "tech": "Phaser.io, Socket.io"
+                    "tech": "Phaser Socket"
                 },
                 {
                     "name": "Wombat",
                     "image": Wombat,
                     "descript": "wombat image",
                     "link": "/wombat",
-                    "tech": "MERN, Sass, Gulp, AJAX"
+                    "tech": "MERN\xa0 Sass\xa0 Gulp\xa0 AJAX"
                 }
             ]
         }
