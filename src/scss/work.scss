@@ -31,7 +31,7 @@
     }
 
     @media screen and ($small-desktop-up) {
-        margin: 1em 3em 1em 3em;
+        margin: 1em 3.3em 1em 3.3em;
         width: 39%;
     }
 
@@ -70,7 +70,7 @@
 .project-thumbnail {
     display: block;
     opacity: 0.5;
-    transition: opacity $med-speed;
+    transition: transform $med-speed, opacity $med-speed;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
@@ -88,15 +88,9 @@
     padding: 0.5em;
     margin-bottom: 0 !important;
     z-index: 1;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 
     @media screen and ($large-tablet-up) {
         bottom: 4.5em;
-    }
-
-    @media screen and ($small-desktop-up) {
-        left: 2em;
     }
 }
 
@@ -128,7 +122,7 @@
     font-weight: 300;
     color: $orange;
     padding: 0.25em 0 0 0.4em;
-    transition: color $fast-speed;
+    transition: transform $med-speed, color $fast-speed;
     z-index: 5;
 
     @media screen and ($large-tablet-up) {
@@ -139,7 +133,7 @@
     }
 
     @media screen and ($small-desktop-up) {
-        right: 0.5rem;
+        right: 0.45rem;
     }
 }
 
@@ -149,8 +143,6 @@
     max-height: 2em;
     position: absolute;
     background-color: white;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 
     @media screen and ($large-tablet-up) {
         width: 99%;
@@ -163,8 +155,6 @@
     color: inherit;
     position: relative;
     z-index: 1;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     overflow: hidden;
 }
