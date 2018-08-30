@@ -116,6 +116,7 @@
 
 .project-subtitle {
     @include smooth;
+    @include Roboto;
 
     position: absolute;
     background-color: white;
