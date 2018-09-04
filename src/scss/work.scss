@@ -24,6 +24,8 @@
     background-color: rgba(220, 220, 220, 0.6);
     color: black;
     transition: transform $med-speed, opacity $med-speed, color $med-speed;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     @media screen and ($large-tablet-up) {
         margin: 1em 0.5em 1em 0.5em;
@@ -70,7 +72,7 @@
 .project-thumbnail {
     display: block;
     opacity: 0.5;
-    transition: transform $med-speed, opacity $med-speed;
+    transition: opacity $med-speed;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
@@ -122,7 +124,7 @@
     font-weight: 300;
     color: $orange;
     padding: 0.25em 0 0 0.4em;
-    transition: transform $med-speed, color $fast-speed;
+    transition: color $fast-speed;
     z-index: 5;
 
     @media screen and ($large-tablet-up) {
