@@ -24,6 +24,8 @@
     background-color: rgba(220, 220, 220, 0.6);
     color: black;
     transition: transform $med-speed, opacity $med-speed, color $med-speed;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     @media screen and ($large-tablet-up) {
         width: calc(50% - 2em);
