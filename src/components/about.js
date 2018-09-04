@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade, Flip } from 'react-reveal'
-import Resume from '../media/Roy Hwang Resume 2018.pdf'
+import Resume from '../media/resume.pdf'
 import Background from '../media/banner-bg.jpg'
 import '../scss/about.scss'
 
