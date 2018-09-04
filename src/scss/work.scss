@@ -94,18 +94,6 @@
     padding: 0.2em 0.5em;
 }
 
-.img-filler {
-    width: 93%;
-    height: 3em;
-    max-height: 2em;
-    position: absolute;
-
-    @media screen and ($large-tablet-up) {
-        width: 99%;
-        max-height: 3em;
-    }
-}
-
 .fade-box {
     background: none;
     color: inherit;
