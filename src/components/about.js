@@ -31,30 +31,23 @@ const About = () => (
                                 The Coding Boot Camp &nbsp;|&nbsp;  UCI
                             </h3>
                             <p className="exp-sub">Student</p>
-                            <p className="exp-sub">Oct 2017 - Jan 2018</p>
+                            <p className="exp-sub -date">Oct 2017 - Jan 2018</p>
                         </li>
 
                         <li className="exp-para-item">
                             <h3 className="exp-title">
-                                Wismettac Asian Foods
+                                Fullstack Development
                             </h3>
-                            <p className="exp-sub">Sales Associate</p>
-                            <p className="exp-sub">Aug 2015 - May 2017</p>
-                        </li>
-
-                        <li className="exp-para-item">
-                            <h3 className="exp-title">
-                                New Japan Food Corporation
-                            </h3>
-                            <p className="exp-sub">Sales and Marketing Intern</p>
-                            <p className="exp-sub">Jun 2013 - Aug 2013</p>
-                        </li>
-                        <li className="exp-para-item">
-                            <h3 className="exp-title">
-                                Hadicun Oriental Giant
-                            </h3>
-                            <p className="exp-sub">Sales and Business Development Intern</p>
-                            <p className="exp-sub">Jun 2012 - Sep 2012</p>
+                            <p className="exp-sub">JavaScript ES5 / ES6</p>
+                            <p className="exp-sub">HTML5</p>
+                            <p className="exp-sub">CSS3</p>
+                            <p className="exp-sub">Node.js</p>
+                            <p className="exp-sub">Express.js</p>
+                            <p className="exp-sub">React.js</p>
+                            <p className="exp-sub">MongoDB</p>
+                            <p className="exp-sub">jQuery</p>
+                            <p className="exp-sub">Sass</p>
+                            <p className="exp-sub">Gatsby.js</p>
                         </li>
                     </ul>
 

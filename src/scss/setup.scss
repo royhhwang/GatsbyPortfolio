@@ -1,8 +1,9 @@
 // Breakpoints
-$large-tablet-up:  'min-width: 720px';
-$small-desktop-up: 'min-width: 960px';
-$med-desktop-up:   'min-width: 1020px';
-$large-desktop-up: 'min-width: 1120px';
+$large-tablet-down    : 'max-width: 719px';
+$large-tablet-up      : 'min-width: 720px';
+$small-desktop-up     : 'min-width: 960px';
+$med-desktop-up       : 'min-width: 1020px';
+$large-desktop-up     : 'min-width: 1120px';
 
 // Colors
 $light-gray: #d7d7d7;
