@@ -6,8 +6,8 @@
     right: 1.5em;
     width: 3em;
     height: 3em;
-    transition: opacity 0.5s linear, transform 0.5s linear;
-    
+    transition: opacity $fast-speed linear, transform $fast-speed linear;
+
     @media screen and (max-width: 700px) {
         width: 1em;
         height: 1em;
