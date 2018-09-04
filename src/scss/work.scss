@@ -18,8 +18,8 @@
     display: inline-block;
     position: relative;
     height: auto;
-    width: 50%;
-    margin: 0;
+    width: calc(100% - 2em);
+    margin: 1em;
     padding: 0.5em;
     background-color: rgba(220, 220, 220, 0.6);
     color: black;
@@ -28,17 +28,11 @@
     backface-visibility: hidden;
 
     @media screen and ($large-tablet-up) {
-        margin: 1em 0.5em 1em 0.5em;
-        width: 46.5%;
+        width: calc(50% - 2em);
     }
 
-    @media screen and ($small-desktop-up) {
-        margin: 1em 3.3em 1em 3.3em;
-        width: 39%;
-    }
-
-    @media screen and ($large-desktop-up) {
-        margin: 0.7em 0.5em 0.7em 0.5em;
+    @media screen and ($med-desktop-up) {
+        margin: 0.7em 0.5em;
         width: calc(33% - 0.8em);
     }
 }
@@ -50,20 +44,12 @@
     transform: scale(1.06);
     box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
 
-    .img-filler {
-        background-color: black;
-    }
-
     .project-thumbnail {
         opacity: 1;
     }
 
-    .project-title {
-        color: $bright-green;
-    }
-
+    .project-title,
     .project-subtitle {
-        display: block;
         color: $bright-green;
         background-color: black;
     }
@@ -72,84 +58,42 @@
 .project-thumbnail {
     display: block;
     opacity: 0.5;
-    transition: opacity $med-speed;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    transition: transform $med-speed, opacity $med-speed;
+    width: 100%;
 }
 
 .work-link {
     display: block;
     background: #fff;
+    position: relative;
 }
 
-.project-image {
+.project-title-container {
+    color: $orange;
     position: absolute;
-    bottom: 0em;
-    left: 0em;
-    background-color: transparent;
-    padding: 0.5em;
-    margin-bottom: 0 !important;
+    bottom: 0.7em;
+    padding: 1em;
+    width: 100%;
     z-index: 1;
+}
 
-    @media screen and ($large-tablet-up) {
-        bottom: 4.5em;
-    }
+.project-title,
+.project-subtitle {
+    background-color: white;
+    display: inline-block;
+    transition: color $med-speed;
 }
 
 .project-title {
-    color: $orange;
-    padding-top: 0.3em;
-    padding-bottom: 0;
-    font-size: 16px;
-    min-height: 2em;
-    transition: color $fast-speed;
-
-    @media screen and ($large-tablet-up) {
-        padding: 0.25em 0 0 0.4em;
-        font-size: 1.62671rem;
-        min-height: 0;
-    }
+    font-size: 1.62671rem;
+    padding: 0.3em;
 }
 
 .project-subtitle {
     @include Roboto;
-
-    position: absolute;
-    background-color: white;
-    width: 4.2rem;
+    font-size: 0.95rem;
     line-height: 1.2rem;
-    bottom: 1rem;
-    right: 0rem;
-    font-size: 0.7rem;
-    font-weight: 300;
-    color: $orange;
-    padding: 0.25em 0 0 0.4em;
-    transition: color $fast-speed;
-    z-index: 5;
-
-    @media screen and ($large-tablet-up) {
-        line-height: 1.7rem;
-        width: 5.8rem;
-        bottom: 4.5rem;
-        font-size: 1rem;
-    }
-
-    @media screen and ($small-desktop-up) {
-        right: 0.45rem;
-    }
-}
-
-.img-filler {
-    width: 93%;
-    height: 3em;
-    max-height: 2em;
-    position: absolute;
-    background-color: white;
-
-    @media screen and ($large-tablet-up) {
-        width: 99%;
-        max-height: 3em;
-    }
+    padding: 0.2em 0.5em;
 }
 
 .fade-box {
