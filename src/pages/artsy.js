@@ -32,8 +32,8 @@ const Artsy = () => (
               <source src={ArtsyVideo} type="video/mp4" />
               Your browser does not support this video!
             </video>
-            <img src={ArtsyPic} alt="artsy api gif" style={{ paddingRight: 0.25 + "em" }} />
-            <img src={ArtsyPic2} alt="artsy api gif" style={{ paddingLeft: 0.25 + "em" }}/>
+            <img src={ArtsyPic} alt="artsy api gif" className="mobile-img1" />
+            <img src={ArtsyPic2} alt="artsy api gif" className="mobile-img2" />
           </div>
         </div>
       </Fade>
