@@ -2,7 +2,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Fade } from 'react-reveal'
 import Nav from '../components/nav.js'
+import MobileVideo from '../media/mobileartsy.mp4'
 import ArtsyVideo from '../media/artsy.mp4'
+import ArtsyPic from '../media/artsypic.png'
+import ArtsyPic2 from '../media/artsypic2.png'
 import ArtsyIcon from '../media/artsyjpg.jpg'
 import '../scss/project.scss'
 
@@ -17,11 +20,21 @@ const Artsy = () => (
       </Link>
       <Fade>
         <h1 className="display-title"><span>Artsy</span></h1>
-        <div className="video-container wrapper">
-          <video className="half-display video-content" controls="true" playsInline muted autoPlay loop>
-            <source src={ArtsyVideo} type="video/mp4" />
-            Your browser does not support this video!
-          </video>
+        <div className="mobile-container wrapper">
+          <div className="mobile-prime">
+            <video className="half-display" controls="true" playsInline muted autoPlay loop>
+              <source src={MobileVideo} type="video/mp4" />
+              Your browser does not support this video!
+            </video>
+          </div>
+          <div className="mobile-content">
+            <video className="half-display" controls="true" playsInline muted autoPlay loop>
+              <source src={ArtsyVideo} type="video/mp4" />
+              Your browser does not support this video!
+            </video>
+            <img src={ArtsyPic} alt="artsy api gif" style={{ paddingRight: 0.25 + "em" }} />
+            <img src={ArtsyPic2} alt="artsy api gif" style={{ paddingLeft: 0.25 + "em" }}/>
+          </div>
         </div>
       </Fade>
       <div className="project-content">

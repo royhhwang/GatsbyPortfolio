@@ -62,6 +62,36 @@
     width: 100%;
 }
 
+.mobile-container {
+    width: 100%;
+    position: relative;
+}
+
+.mobile-prime {
+    display: inline-block;
+    width: 33%;
+
+    video {
+        width: 100%;
+        padding-right: 0.5rem;
+    }
+}
+
+.mobile-content {
+    display: inline-block;
+    width: 66%;
+    vertical-align: top;
+
+    video {
+        width: 100%;
+    }
+
+    img {
+        width: 50%;
+        padding-top: 0.25rem;
+    }
+}
+
 .project-content {
     padding: 3rem 0 5rem;
 
@@ -117,6 +147,7 @@
     font-size: 1rem;
     font-weight: 300;
 }
+
 .text-content {
     flex-basis: 10%;
     text-align: center;
