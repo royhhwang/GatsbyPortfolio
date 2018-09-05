@@ -4,6 +4,7 @@ import { Fade } from 'react-reveal'
 import Nav from '../components/nav.js'
 import MobileVideo from '../media/mobileartsy.mp4'
 import ArtsyVideo from '../media/artsy.mp4'
+import ArtsyGif from '../media/artsy3.gif'
 import ArtsyPic from '../media/artsypic.png'
 import ArtsyPic2 from '../media/artsypic2.png'
 import ArtsyIcon from '../media/artsyjpg.jpg'
@@ -28,12 +29,9 @@ const Artsy = () => (
             </video>
           </div>
           <div className="mobile-content">
-            <video className="half-display" controls="true" playsInline muted autoPlay loop>
-              <source src={ArtsyVideo} type="video/mp4" />
-              Your browser does not support this video!
-            </video>
-            <img src={ArtsyPic} alt="artsy api gif" className="mobile-img1" />
-            <img src={ArtsyPic2} alt="artsy api gif" className="mobile-img2" />
+            <img src={ArtsyGif} alt="artsy api gif" className="half-display mobile-gif" />
+            <img src={ArtsyPic} alt="artsy api gif" />
+            <img src={ArtsyPic2} alt="artsy api gif" />
           </div>
         </div>
       </Fade>
