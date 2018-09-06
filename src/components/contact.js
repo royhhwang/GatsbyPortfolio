@@ -1,7 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-reveal'
 import '../scss/contact.scss'
-import Background from '../media/palms.jpg'
 import Git from "../media/github.png"
 import Link from "../media/linkedin.png"
 import Gmail from "../media/gmail.svg"
@@ -32,7 +31,7 @@ const Contact = () => (
             <br />
             <div>
                 <div className="leaves-button contact-section" style={{ backgroundColor: "transparent" }}>
-                    <a href="mailto:royhhwang@gmail.com" target="_blank" className="leaves-orange-link">
+                    <a href="mailto:royhhwang@gmail.com" className="leaves-orange-link">
                         <img className="leaves-button-img" src={Gmail} alt="https://www.linkedin.com/in/royhhwang/" />
                         <p className="leaves-button-label"> Email</p>
                     </a>

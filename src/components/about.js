@@ -1,6 +1,6 @@
 import React from 'react'
-import { Fade, Flip } from 'react-reveal'
-import Resume from '../media/resume.pdf'
+import { Fade } from 'react-reveal'
+import Resume from '../media/Roy Hwang Resume 2018.pdf'
 import Background from '../media/banner-bg.jpg'
 import '../scss/about.scss'
 
@@ -19,7 +19,7 @@ const About = () => (
                         In a past life, I worked as a <strong>jack-of-all-trades</strong> sales associate managing direct relationships with 120+ companies in the LA region, including Nobu, Matsuhisa, and the Marriott Hotel.
                     </p>
                     <p className="about-bottom">
-                        I'm <strong>currently seeking</strong> a creative role that will allow me to blend my passions for interactive UI and game design. Happy to relocate for my next adventure.
+                        I'm <strong>currently seeking</strong> a junior-level fullstack or frontend role for a software service I can believe in. Happy to relocate for my next adventure.
                     </p>
                 </div>
             </Fade>
