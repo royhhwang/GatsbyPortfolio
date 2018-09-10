@@ -38,14 +38,14 @@ const Artsy = () => (
         <Fade left>
           <div className="project-description">
             <h2 className="heading">Artist and Artwork Gallery</h2>
-            <p className="tech"><strong>React.js | Artsy | Bootstrap</strong></p>
-            <p className="blurb">ArtsyAPI is a straightforward, sleek webpage for easy content display and categorization.</p>
+            <p className="tech"><strong>React | Artsy API | Bootstrap | Sass</strong></p>
+            <p className="blurb">Concept webpage for an art gallery site. Taps into the Artsy API to display images of historic artwork.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
-                <li>Modular and quick; designed for mobile first.</li>
+                <li>Modular and sleek; designed for mobile first.</li>
                 <li>Scan and shop through a large compilation of artwork.</li>
-                <li>Built through React.js and Bootstrap.</li>
+                <li>Built with React and Bootstrap.</li>
               </ul>
             </div>
           </div>

@@ -28,14 +28,14 @@ const Corgi = () => (
         <Fade left>
           <div className="project-description">
             <h2 className="heading">Gamifying the Interview Process</h2>
-            <p className="tech"><strong>React.js | Unity 3D | 3ds Max</strong></p>
+            <p className="tech"><strong>React | Unity 3D | 3ds Max | MERN Stack | HTML5 | CSS3</strong></p>
             <p className="blurb">Simple, yet challenging puzzles test an applicant's problem-solving skills.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Game Programmer: Tasked with creation of menus, transitions, and levels.</li>
-                <li>Visual Editior: Mainainted visual integrity and thematic design aspects.</li>
-                <li>UX/UI Designer: Priority on mobile development scalability.</li>
+                <li>Visual Editor: Maintained visual integrity and thematic design aspects.</li>
+                <li>UX/UI Designer: Priority on mobile development and scalability.</li>
                 <li>Deployed on AWS.</li>
               </ul>
             </div>
@@ -46,8 +46,6 @@ const Corgi = () => (
             <img src={CorgiIcon} alt="coding with corgis page" className="round" />
             <br />
             <a className="dark-green-button icon-spin" href="https://royhhwang.itch.io/coding-with-corgis/" target="_blank" rel="noopener noreferrer">The Game</a>
-            <br />
-            <a className="dark-green-button icon-spin" href="http://www.codewithcorgis.com/" target="_blank" rel="noopener noreferrer">The Site</a>
             <br />
             <a className="dark-green-button icon-spin" href="https://github.com/royhhwang/CodeWithCorgis" target="_blank" rel="noopener noreferrer">The Repo</a>
             <br />

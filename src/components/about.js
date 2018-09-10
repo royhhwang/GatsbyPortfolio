@@ -43,7 +43,7 @@ const About = () => (
                             <p className="exp-sub">CSS3</p>
                             <p className="exp-sub">Node.js</p>
                             <p className="exp-sub">Express.js</p>
-                            <p className="exp-sub">React.js</p>
+                            <p className="exp-sub">React</p>
                             <p className="exp-sub">MongoDB</p>
                             <p className="exp-sub">jQuery</p>
                             <p className="exp-sub">Sass</p>

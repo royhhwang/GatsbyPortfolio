@@ -29,14 +29,14 @@ const Race = () => (
         <Fade left>
           <div className="project-description">
             <h2 className="heading">Collaborative Racer</h2>
-            <p className="tech"><strong>Phaser.io | Socket.io</strong></p>
+            <p className="tech"><strong>Phaser | Socket.io | MERN Stack</strong></p>
             <p className="blurb">Race Painting is as simple as its name. Grab a friend and paint away!</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Game Programmer: Responsible for canvassing and car physics rendering. Also handled paint trails and Socket.io location updates.</li>
                 <li>Smooth gameplay with reactive community map.</li>
-                <li>Socket.io in conjunction with Phaser.io allows for multiplayer functionality.</li>
+                <li>Socket.io in conjunction with Phaser allows for multiplayer functionality.</li>
                 <li>MySQL database handles local saves for maps and player position.</li>
               </ul>
             </div>

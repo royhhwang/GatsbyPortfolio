@@ -28,15 +28,15 @@ const Dark = () => (
         <Fade left>
           <div className="project-description">
             <h2 className="heading">Horror Web VR</h2>
-            <p className="tech"><strong>React.js | AFrame.js | Parallax.js | 3ds Max</strong></p>
+            <p className="tech"><strong>React | A-Frame | 3ds Max | Parallax.js | CSS3</strong></p>
             <p className="blurb">In the Dark takes horror game elements and tropes to build a thrilling web experience.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
-                <li>VR scene building handled through AFrame.js.</li>
-                <li>IGDB's database returns keywords by popularity. .</li>
+                <li>Virtual reality scene-building handled through A-Frame.</li>
+                <li>Taps into the Internet Game Database's API to return horror game suggestions.</li>
                 <li>Parallax.js adds movement and atmosphere to the world.</li>
-                <li>Models touched-up through 3ds Max.</li>
+                <li>3D models touched-up through 3ds Max.</li>
               </ul>
             </div>
           </div>
