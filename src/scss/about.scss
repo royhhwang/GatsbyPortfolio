@@ -58,6 +58,8 @@
 
     @media screen and ($large-tablet-up) {
         width: 50%;
+        position: relative;
+        left: 5rem;
     }
 
     @media screen and ($small-desktop-up) {
