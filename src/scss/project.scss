@@ -79,7 +79,6 @@
 
     video {
         width: 100%;
-        max-height: 70vh;
         transition: transform $med-speed;
 
         &:hover {
@@ -91,16 +90,14 @@
     @media screen and ($large-tablet-up) {
         display: inline-block;
         width: 33%;
-        padding: 0 5px 5px 5px;
+        padding: 0 0.5rem 0.5rem 0.5rem;
 
         video {
             width: 100%;
         }
     }
 
-    @media screen and ($small-desktop-up) {
-        padding: 0 6.3px 6.3px 6.3px;
-    }
+    @media screen and ($small-desktop-up) {}
 }
 
 .mobile-content {
@@ -109,19 +106,8 @@
     vertical-align: top;
 
     .mobile-gif {
-        display: none;
         width: 100%;
-        transition: transform $med-speed;
-
-        &:hover {
-            transform: scale(1.15);
-            box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
-        }
-    }
-
-    img {
-        width: 100%;
-        padding: 1rem 0 0.5rem 0;
+        padding-top: 1rem;
         transition: transform $med-speed;
 
         &:hover {
@@ -133,30 +119,11 @@
     @media screen and ($large-tablet-up) {
         display: inline-block;
         width: 66%;
-        padding: 0 4px 4px 4px;
 
         .mobile-gif {
+            padding: 0 0.4rem 0.4rem 0.4rem;
             display: inline-block;
-            padding: 0;
         }
-
-        img {
-            width: 50%;
-            padding: 0;
-            max-height: none;
-        }
-
-        img:nth-child(odd) {
-            padding-left: 0.2rem;
-        }
-
-        img:nth-child(even) {
-            padding-right: 0.2rem;
-        }
-    }
-
-    @media screen and ($med-desktop-up) {
-        padding: 0 1.5px 1.5px 1.5px;
     }
 }
 

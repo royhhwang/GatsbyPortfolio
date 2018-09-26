@@ -2,10 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Fade } from 'react-reveal'
 import Nav from '../components/nav.js'
-import MobileVideo from '../media/mobileartsy.mp4'
-import ArtsyGif from '../media/artsy3.gif'
-import ArtsyPic from '../media/artsypic.png'
-import ArtsyPic2 from '../media/artsypic2.png'
+import MobileVideo from '../media/artsymobile.mp4'
+import ArtsyGif from '../media/artsy.gif'
 import ArtsyIcon from '../media/artsyjpg.jpg'
 import '../scss/project.scss'
 
@@ -29,8 +27,6 @@ const Artsy = () => (
           </div>
           <div className="mobile-content">
             <img src={ArtsyGif} alt="artsy api gif" className="half-display mobile-gif" />
-            <img src={ArtsyPic} alt="artsy api gif" />
-            <img src={ArtsyPic2} alt="artsy api gif" />
           </div>
         </div>
       </Fade>
