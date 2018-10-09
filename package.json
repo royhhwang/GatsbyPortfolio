@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Roy H Hwang | royhhwang@gmail.com",
   "dependencies": {
+    "deep-extend": "^0.5.1",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
     "gatsby-plugin-react-helmet": "^2.0.11",
