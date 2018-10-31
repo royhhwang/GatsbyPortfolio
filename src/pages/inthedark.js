@@ -34,7 +34,7 @@ const Dark = () => (
               <br />
               <ul className="project-text">
                 <li>VR scene building handled through AFrame.js.</li>
-                <li>IGDB's database returns keywords by popularity. .</li>
+                <li>IGDB's database returns keywords by popularity.</li>
                 <li>Parallax.js adds movement and atmosphere to the world.</li>
                 <li>Models touched-up through 3ds Max.</li>
               </ul>

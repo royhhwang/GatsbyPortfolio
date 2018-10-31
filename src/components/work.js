@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Fade, Flip, Reveal } from 'react-reveal'
+import { Fade, Reveal } from 'react-reveal'
+import KnobCreek from '../media/knobcreek.jpeg'
 import Artsy from '../media/artsyjpg.jpg'
 import Ring from '../media/ring.jpg'
 import Corgi from '../media/corgijpg.jpg'
@@ -13,6 +14,13 @@ class Work extends Component {
         super(props);
         this.state = {
             projects: [
+                {
+                    "name": "Barrel Dev Test",
+                    "image": KnobCreek,
+                    "descript": "knobcreek bourbon logo",
+                    "link": "/knobcreek",
+                    "tech": "WordPress | Twig | Pantheon | Gulp"
+                },
                 {
                     "name": "Artsy",
                     "image": Artsy,
@@ -62,25 +70,44 @@ class Work extends Component {
     render() {
 
         const projectList = this.state.projects.map((work, index) => {
-            return (
-                <div className="project-blocks fade-box" key={index}>
-                    <a className="work-link" href={work.link}>
-                        <div className="project-title-container">
-                            <Fade bottom>
-                                <h2 className="project-title">{work.name}</h2>
-                                <br />
-                                <p className="project-subtitle">{work.tech}</p>
-                            </Fade>
-                        </div>
-                        <img className="project-thumbnail" src={work.image} alt={work.descript} />
-                        <Reveal effect="fade-start"></Reveal>
-                    </a>
-                </div>
-            )
+            if (index < 6) {
+                return (
+                    <div className="project-blocks fade-box" key={index}>
+                        <a className="work-link" href={work.link}>
+                            <div className="project-title-container">
+                                <Fade bottom>
+                                    <h2 className="project-title">{work.name}</h2>
+                                    <br />
+                                    <p className="project-subtitle">{work.tech}</p>
+                                </Fade>
+                            </div>
+                            <img className="project-thumbnail" src={work.image} alt={work.descript} />
+                            <Reveal effect="fade-start"></Reveal>
+                        </a>
+                    </div>
+                )
+
+            }
+            else if (index >= 6) {
+                return (
+                    <div className="project-blocks" key={index}>
+                        <a href={work.link}>
+                            <div className="project-additional">
+                                <Fade bottom>
+                                    <h2 className="project-title -add-title">{work.name}</h2>
+                                    <img className="project-thumbnail -add-image" src={work.image} alt={work.descript} />
+                                    <br />
+                                    <p className="project-subtitle -add-subtitle">{work.tech}</p>
+                                </Fade>
+                            </div>
+                        </a>
+                    </div>
+                )
+            }
         })
 
         return (
-            <div className="wrapper project-wrapper" id="projects">
+            <div className="wrapper project-wrapper" id="projects" >
                 <Fade left>
                     <h1 className="section-header">Projects</h1>
                 </Fade>

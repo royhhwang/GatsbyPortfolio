@@ -1,201 +1,220 @@
 @import "setup";
 
 .project-wrapper {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project-layer {
-    padding-bottom: 1.5em;
-    font-size: 15px;
-    width: 100%;
+  padding-bottom: 1.5em;
+  font-size: 15px;
+  width: 100%;
 
-    @media screen and ($large-tablet-up) {
-        font-size: 15px;
-    }
+  @media screen and ($large-tablet-up) {
+    font-size: 15px;
+  }
 }
 
 .project-blocks {
-    display: inline-block;
-    position: relative;
-    height: auto;
-    width: calc(100% - 2em);
-    margin: 1em;
-    padding: 0.5em;
-    background-color: rgba(220, 220, 220, 0.6);
-    color: black;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: box-shadow $med-speed, transform $med-speed, opacity $med-speed, color $med-speed;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: calc(100% - 2em);
+  margin: 1em;
+  padding: 0.5em;
+  background-color: rgba(220, 220, 220, 0.6);
+  color: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow $med-speed, transform $med-speed, opacity $med-speed,
+    color $med-speed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 
-    @media screen and ($large-tablet-up) {
-        width: calc(50% - 2em);
-    }
+  @media screen and ($large-tablet-up) {
+    width: calc(50% - 2em);
+  }
 
-    @media screen and ($med-desktop-up) {
-        margin: 0.7em 0.5em;
-        width: calc(33% - 0.8em);
-    }
+  @media screen and ($med-desktop-up) {
+    margin: 0.7em 0.5em;
+    width: calc(33% - 0.8em);
+  }
 }
 
-.project-blocks:hover, .project-blocks:active {
+.project-blocks:hover,
+.project-blocks:active {
+  opacity: 1;
+  color: white;
+  z-index: 2;
+  transform: scale(1.06);
+  box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
+
+  .project-thumbnail {
     opacity: 1;
-    color: white;
-    z-index: 2;
-    transform: scale(1.06);
-    box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
+  }
 
-    .project-thumbnail {
-        opacity: 1;
-    }
-
-    .project-title,
-    .project-subtitle {
-        color: $bright-green;
-        background-color: black;
-    }
+  .project-title,
+  .project-subtitle {
+    color: $bright-green;
+    background-color: black;
+  }
 }
 
 .project-thumbnail {
-    display: block;
-    opacity: 0.5;
-    transition: transform $med-speed, opacity $med-speed;
-    width: 100%;
+  display: block;
+  opacity: 0.5;
+  transition: transform $med-speed, opacity $med-speed;
+  width: 100%;
+}
+
+.-add-title {
+  color: #ff4400;
+}
+
+.-add-subtitle {
+  color: #ff4400;
+}
+
+.-add-image {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  float: right;
+  margin: 0 auto;
+  width: 15%;
 }
 
 .work-link {
-    display: block;
-    background: #fff;
-    position: relative;
+  display: block;
+  background: #fff;
+  position: relative;
 }
 
 .project-title-container {
-    color: $orange;
-    position: absolute;
-    bottom: 0.7em;
-    padding: 1em;
-    width: 100%;
-    z-index: 1;
+  color: $orange;
+  position: absolute;
+  bottom: 0.7em;
+  padding: 1em;
+  width: 100%;
+  z-index: 1;
 }
 
 .project-title,
 .project-subtitle {
-    background-color: white;
-    display: inline-block;
-    transition: color $med-speed;
+  background-color: white;
+  display: inline-block;
+  transition: color $med-speed;
 }
 
 .project-title {
-    font-size: 1.62671rem;
-    padding: 0.3em;
+  font-size: 1.62671rem;
+  padding: 0.3em;
 }
 
 .project-subtitle {
-    @include Roboto;
+  @include Roboto;
 
-    font-size: 0.95rem;
-    line-height: 1.2rem;
-    padding: 0.2em 0.5em;
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  padding: 0.2em 0.5em;
 }
 
 .fade-box {
-    background: none;
-    color: inherit;
-    position: relative;
-    z-index: 1;
-    -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
+  background: none;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 .fade-box:focus {
-    outline: none;
+  outline: none;
 }
 
 .fade-box > span {
-    vertical-align: top;
+  vertical-align: top;
 
-    svg {
-        vertical-align: top;
-    }
+  svg {
+    vertical-align: top;
+  }
 }
 
 .fade-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 100%;
-    background: $orange;
-    z-index: -1;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
-    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    -webkit-transition: -webkit-transform 0.5s, background-color 0.5s;
-    transition: transform 0.5s, background-color 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: $orange;
+  z-index: -1;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -30em, 0);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform 0.5s, background-color 0.5s;
+  transition: transform 0.5s, background-color 0.5s;
 }
 
 .fade-box:hover::before {
-    background: linear-gradient(120deg, #AAE3AB, #A3D95B);
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  background: linear-gradient(120deg, #aae3ab, #a3d95b);
+  -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  transform: rotate3d(0, 0, 1, 0deg);
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
 .fade-start {
-    position: absolute;
-    background: transparent;
-    border: solid transparent 5px;
-    width: 100%;
-    height: 150%;
-    bottom: 0;
-    left: 0;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    animation: fadeStart 3s linear forwards;
-    -webkit-animation: fadeStart 3s linear forwards;
+  position: absolute;
+  background: transparent;
+  border: solid transparent 5px;
+  width: 100%;
+  height: 150%;
+  bottom: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: fadeStart 3s linear forwards;
+  -webkit-animation: fadeStart 3s linear forwards;
 }
 
 @keyframes fadeStart {
-    0% {
-        transform: translateY(100%);
-        background: rgba(0, 0, 0, 1);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 1);
+    opacity: 1;
+  }
 
-    99% {
-        background: rgba(0, 0, 0, 1);
-        transform: translateY(-200%);
-        opacity: 1;
-    }
+  99% {
+    background: rgba(0, 0, 0, 1);
+    transform: translateY(-200%);
+    opacity: 1;
+  }
 
-    100% {
-        background: rgba(0, 0, 0, 1);
-        transform: translateY(-200%);
-        opacity: 0;
-        display: none;
-    }
+  100% {
+    background: rgba(0, 0, 0, 1);
+    transform: translateY(-200%);
+    opacity: 0;
+    display: none;
+  }
 }
 
 @-webkit-keyframes fadeStart {
-    0% {
-        transform: translateY(100%);
-        background: rgba(0, 0, 0, 1);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100%);
+    background: rgba(0, 0, 0, 1);
+    opacity: 1;
+  }
 
-    99% {
-        background: rgba(0, 0, 0, 1);
-        transform: translateY(-200%);
-        opacity: 1;
-    }
+  99% {
+    background: rgba(0, 0, 0, 1);
+    transform: translateY(-200%);
+    opacity: 1;
+  }
 
-    100% {
-        background: rgba(0, 0, 0, 1);
-        transform: translateY(-200%);
-        opacity: 0;
-        display: none;
-    }
+  100% {
+    background: rgba(0, 0, 0, 1);
+    transform: translateY(-200%);
+    opacity: 0;
+    display: none;
+  }
 }
