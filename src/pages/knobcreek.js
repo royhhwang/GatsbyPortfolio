@@ -44,7 +44,7 @@ const KnobCreek = () => (
         </Fade>
         <Fade right>
           <div className="half-display text-content">
-            <img src={BarrelIcon} alt="In the Dark Page" className="round" />
+            <img src={BarrelIcong} alt="In the Dark Page" className="round" />
             <br />
             <a className="dark-green-button icon-spin" href="http://dev-rh-barrel.pantheonsite.io" target="_blank" rel="noopener noreferrer">The Site</a>
             <br />
