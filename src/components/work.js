@@ -15,7 +15,7 @@ class Work extends Component {
         this.state = {
             projects: [
                 {
-                    "name": "Barrel Dev Test",
+                    "name": "Knob Creek",
                     "image": KnobCreek,
                     "descript": "knobcreek bourbon logo",
                     "link": "/knobcreek",
