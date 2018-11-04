@@ -70,7 +70,7 @@ class Work extends Component {
     render() {
 
         const projectList = this.state.projects.map((work, index) => {
-            if (index < 6) {
+            if (index < 12) {
                 return (
                     <div className="project-blocks fade-box" key={index}>
                         <a className="work-link" href={work.link}>
@@ -86,24 +86,8 @@ class Work extends Component {
                         </a>
                     </div>
                 )
-
             }
-            else if (index >= 6) {
-                return (
-                    <div className="project-blocks" key={index}>
-                        <a href={work.link}>
-                            <div className="project-additional">
-                                <Fade bottom>
-                                    <h2 className="project-title -add-title">{work.name}</h2>
-                                    <img className="project-thumbnail -add-image" src={work.image} alt={work.descript} />
-                                    <br />
-                                    <p className="project-subtitle -add-subtitle">{work.tech}</p>
-                                </Fade>
-                            </div>
-                        </a>
-                    </div>
-                )
-            }
+            else { return }
         })
 
         return (
