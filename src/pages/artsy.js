@@ -2,10 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Fade } from 'react-reveal'
 import Nav from '../components/nav.js'
-import MobileVideo from '../media/mobileartsy.mp4'
-import ArtsyGif from '../media/artsy3.gif'
-import ArtsyPic from '../media/artsypic.png'
-import ArtsyPic2 from '../media/artsypic2.png'
+import MobileVideo from '../media/artsymobile.mp4'
+import ArtsyVid from '../media/artsy.mp4'
 import ArtsyIcon from '../media/artsyjpg.jpg'
 import '../scss/project.scss'
 
@@ -21,17 +19,14 @@ const Artsy = () => (
       <Fade>
         <h1 className="display-title"><span>Artsy</span></h1>
         <div className="mobile-container wrapper">
-          <div className="mobile-prime">
-            <video className="half-display" controls="true" playsInline muted autoPlay loop>
-              <source src={MobileVideo} type="video/mp4" />
-              Your browser does not support this video!
+          <video className="half-display video-mobile" controls="true" playsInline muted autoPlay loop>
+            <source src={MobileVideo} type="video/mp4" />
+            Your browser does not support this video!
             </video>
-          </div>
-          <div className="mobile-content">
-            <img src={ArtsyGif} alt="artsy api gif" className="half-display mobile-gif" />
-            <img src={ArtsyPic} alt="artsy api gif" />
-            <img src={ArtsyPic2} alt="artsy api gif" />
-          </div>
+          <video className="half-display video-content artsy-sp" controls="true" playsInline muted autoPlay loop>
+            <source src={ArtsyVid} type="video/mp4" />
+            Your browser does not support this video!
+            </video>
         </div>
       </Fade>
       <div className="project-content">

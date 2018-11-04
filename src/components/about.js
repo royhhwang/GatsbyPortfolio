@@ -1,6 +1,6 @@
 import React from 'react'
 import { Fade } from 'react-reveal'
-import Resume from '../media/Roy Hwang Resume 2018.pdf'
+import Resume from '../media/resume.pdf'
 import Background from '../media/banner-bg.jpg'
 import '../scss/about.scss'
 
@@ -44,6 +44,7 @@ const About = () => (
                             <p className="exp-sub">Node.js</p>
                             <p className="exp-sub">Express.js</p>
                             <p className="exp-sub">React</p>
+                            <p className="exp-sub">WordPress</p>
                             <p className="exp-sub">MongoDB</p>
                             <p className="exp-sub">jQuery</p>
                             <p className="exp-sub">Sass</p>

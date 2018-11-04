@@ -1,367 +1,309 @@
 @import "setup";
 
 .project-main {
-    background-color: $bg-green;
-    min-height: 100vh;
-    position: relative;
+  background-color: $bg-green;
+  min-height: 100vh;
+  position: relative;
 }
 
 .display-layer {
-    width: 100%;
-    color: #fff;
-    padding-top: 4rem;
-    position: relative;
+  width: 100%;
+  color: #fff;
+  padding-top: 4rem;
+  position: relative;
 
-    @media screen and ($large-tablet-up) {
-        padding-top: 3rem;
-    }
+  @media screen and ($large-tablet-up) {
+    padding-top: 3rem;
+  }
 }
 
 .display-title {
-    font-size: 3rem;
-    line-height: 4.5rem;
-    margin: 3rem 0;
-    text-align: center;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  margin: 3rem 0;
+  text-align: center;
 
-    span {
-        background-color: $bright-green;
-        color: $bg-green;
-        padding: 0.5rem 2rem;
-    }
+  span {
+    background-color: $bright-green;
+    color: $bg-green;
+    padding: 0.5rem 2rem;
+  }
 
-    @media screen and ($large-tablet-up) {
-        font-size: 5rem;
-        margin: 5rem 0;
-    }
+  @media screen and ($large-tablet-up) {
+    font-size: 5rem;
+    margin: 5rem 0;
+  }
 }
 
 .half-display {
-    display: inline-block;
-    line-height: 2em;
+  display: inline-block;
+  line-height: 2em;
 
+  img {
+    width: 80px;
+    max-height: 80px;
+    height: auto;
+  }
+
+  @media screen and ($large-tablet-up) {
     img {
-        width: 80px;
-        max-height: 80px;
-        height: auto;
+      width: 60px;
+      max-height: 60px;
+      height: auto;
     }
-
-    @media screen and ($large-tablet-up) {
-        img {
-            width: 60px;
-            max-height: 60px;
-            height: auto;
-        }
-    }
+  }
 }
 
 .video-container {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 .video-content {
-    width: 100%;
-    transition: transform $med-speed;
+  width: 100%;
+  transition: transform $med-speed;
 
-    &:hover {
-        transform: scale(1.15);
-        box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
-    }
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
+  }
 }
 
 .mobile-container {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
-.mobile-prime {
-    display: inline-block;
-    width: 100%;
+.video-mobile {
+  width: 100%;
+  max-height: 83vh;
+  transition: transform $med-speed;
 
-    video {
-        width: 100%;
-        max-height: 70vh;
-        transition: transform $med-speed;
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
+  }
 
-        &:hover {
-            transform: scale(1.15);
-            box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
-        }
-    }
-
-    @media screen and ($large-tablet-up) {
-        display: inline-block;
-        width: 33%;
-        padding: 0 5px 5px 5px;
-
-        video {
-            width: 100%;
-        }
-    }
-
-    @media screen and ($small-desktop-up) {
-        padding: 0 6.3px 6.3px 6.3px;
-    }
+  @media screen and ($large-tablet-up) {
+    display: none;
+  }
 }
 
-.mobile-content {
+.artsy-sp {
+  display: none;
+
+  @media screen and ($large-tablet-up) {
     display: inline-block;
-    width: 100%;
-    vertical-align: top;
-
-    .mobile-gif {
-        display: none;
-        width: 100%;
-        transition: transform $med-speed;
-
-        &:hover {
-            transform: scale(1.15);
-            box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
-        }
-    }
-
-    img {
-        width: 100%;
-        padding: 1rem 0 0.5rem 0;
-        transition: transform $med-speed;
-
-        &:hover {
-            transform: scale(1.15);
-            box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
-        }
-    }
-
-    @media screen and ($large-tablet-up) {
-        display: inline-block;
-        width: 66%;
-        padding: 0 4px 4px 4px;
-
-        .mobile-gif {
-            display: inline-block;
-            padding: 0;
-        }
-
-        img {
-            width: 50%;
-            padding: 0;
-            max-height: none;
-        }
-
-        img:nth-child(odd) {
-            padding-left: 0.2rem;
-        }
-
-        img:nth-child(even) {
-            padding-right: 0.2rem;
-        }
-    }
-
-    @media screen and ($med-desktop-up) {
-        padding: 0 1.5px 1.5px 1.5px;
-    }
+    margin: 0 auto;
+    max-height:400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .project-content {
-    padding: 3rem 0 5rem;
+  padding: 3rem 0 5rem;
 
-    @media screen and ($large-tablet-up) {
-        display: flex;
-        justify-content: center;
-    }
+  @media screen and ($large-tablet-up) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .project-text {
-    padding: 0 0 0 1em;
+  padding: 0 0 0 1em;
 }
 
 .project-description,
 .text-content {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .project-description {
-    max-width: 690px;
+  max-width: 690px;
 
-    strong {
-        color: $bright-green;
-    }
+  strong {
+    color: $bright-green;
+  }
 
-    li {
-        list-style-type: circle;
-    }
+  li {
+    list-style-type: circle;
+  }
 
-    .heading {
-        font-size: 1.375rem;
-        margin-bottom: 0.4rem;
-    }
+  .heading {
+    font-size: 1.375rem;
+    margin-bottom: 0.4rem;
+  }
 
-    .tech {
-        margin-bottom: 0.3rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
+  .tech {
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 
-    .tech,
-    .blurb {
-        @include smooth;
-    }
+  .tech,
+  .blurb {
+    @include smooth;
+  }
 
-    .blurb {
-        @include Muli;
-    }
+  .blurb {
+    @include Muli;
+  }
 }
 
 .task-content {
-    font-family: "Roboto Mono", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .text-content {
-    flex-basis: 10%;
-    text-align: center;
-    width: 100%;
+  flex-basis: 10%;
+  text-align: center;
+  width: 100%;
 
-    .dark-green-button {
-        margin-top: 1rem;
-    }
+  .dark-green-button {
+    margin-top: 1rem;
+  }
 
-    @media screen and ($large-tablet-up) {
-        margin-left: 3rem;
-    }
+  @media screen and ($large-tablet-up) {
+    margin-left: 3rem;
+  }
 }
 
 .round {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 @-webkit-keyframes iconSpin {
-    10% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
 
-    20% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
 
-    30% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
 
-    40% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
 
-    50% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-    }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
 
-    60% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-    }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
 
-    70% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-    }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
 
-    80% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-    }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
 
-    90% {
-        -webkit-transform: translateX(1px) rotate(0);
-        transform: translateX(1px) rotate(0);
-    }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
 
-    100% {
-        -webkit-transform: translateX(-1px) rotate(0);
-        transform: translateX(-1px) rotate(0);
-    }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
 }
 
 @keyframes iconSpin {
-    10% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
 
-    20% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
 
-    30% {
-        -webkit-transform: translateX(3px) rotate(2deg);
-        transform: translateX(3px) rotate(2deg);
-    }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
 
-    40% {
-        -webkit-transform: translateX(-3px) rotate(-2deg);
-        transform: translateX(-3px) rotate(-2deg);
-    }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
 
-    50% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-    }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
 
-    60% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-    }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
 
-    70% {
-        -webkit-transform: translateX(2px) rotate(1deg);
-        transform: translateX(2px) rotate(1deg);
-    }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
 
-    80% {
-        -webkit-transform: translateX(-2px) rotate(-1deg);
-        transform: translateX(-2px) rotate(-1deg);
-    }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
 
-    90% {
-        -webkit-transform: translateX(1px) rotate(0);
-        transform: translateX(1px) rotate(0);
-    }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
 
-    100% {
-        -webkit-transform: translateX(-1px) rotate(0);
-        transform: translateX(-1px) rotate(0);
-    }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
 }
 
 .icon-spin {
-    display: inline-block;
-    margin-top: 1em;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  display: inline-block;
+  margin-top: 1em;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
-    @media screen and ($large-tablet-up) {
-        font-size: 8px;
-    }
+  @media screen and ($large-tablet-up) {
+    font-size: 8px;
+  }
 
-    @media screen and ($small-desktop-up) {
-        font-size: 11px;
-    }
+  @media screen and ($small-desktop-up) {
+    font-size: 11px;
+  }
 }
 
-.icon-spin:hover, .icon-spin:focus, .icon-spin:active {
-    -webkit-animation-name: iconSpin;
-    animation-name: iconSpin;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
+.icon-spin:hover,
+.icon-spin:focus,
+.icon-spin:active {
+  -webkit-animation-name: iconSpin;
+  animation-name: iconSpin;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }

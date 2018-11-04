@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Fade, Reveal } from 'react-reveal'
+import KnobCreek from '../media/knobcreek.jpeg'
 import Artsy from '../media/artsyjpg.jpg'
 import Ring from '../media/ring.jpg'
 import Corgi from '../media/corgijpg.jpg'
@@ -13,6 +14,13 @@ class Work extends Component {
         super(props);
         this.state = {
             projects: [
+                {
+                    "name": "Knob Creek",
+                    "image": KnobCreek,
+                    "descript": "knobcreek bourbon logo",
+                    "link": "/knobcreek",
+                    "tech": "WordPress | Twig | Pantheon | Gulp"
+                },
                 {
                     "name": "Artsy",
                     "image": Artsy,
@@ -62,25 +70,28 @@ class Work extends Component {
     render() {
 
         const projectList = this.state.projects.map((work, index) => {
-            return (
-                <div className="project-blocks fade-box" key={index}>
-                    <a className="work-link" href={work.link}>
-                        <div className="project-title-container">
-                            <Fade bottom>
-                                <h2 className="project-title">{work.name}</h2>
-                                <br />
-                                <p className="project-subtitle">{work.tech}</p>
-                            </Fade>
-                        </div>
-                        <img className="project-thumbnail" src={work.image} alt={work.descript} />
-                        <Reveal effect="fade-start"></Reveal>
-                    </a>
-                </div>
-            )
+            if (index < 12) {
+                return (
+                    <div className="project-blocks fade-box" key={index}>
+                        <a className="work-link" href={work.link}>
+                            <div className="project-title-container">
+                                <Fade bottom>
+                                    <h2 className="project-title">{work.name}</h2>
+                                    <br />
+                                    <p className="project-subtitle">{work.tech}</p>
+                                </Fade>
+                            </div>
+                            <img className="project-thumbnail" src={work.image} alt={work.descript} />
+                            <Reveal effect="fade-start"></Reveal>
+                        </a>
+                    </div>
+                )
+            }
+            else { return }
         })
 
         return (
-            <div className="wrapper project-wrapper" id="projects">
+            <div className="wrapper project-wrapper" id="projects" >
                 <Fade left>
                     <h1 className="section-header">Projects</h1>
                 </Fade>
