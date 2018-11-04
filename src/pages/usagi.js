@@ -28,14 +28,14 @@ const Usagi = () => (
         <Fade left>
           <div className="project-description">
             <h2 className="heading">Frustrating Platformer</h2>
-            <p className="tech"><strong>Unity 3D | 3ds Max</strong></p>
+            <p className="tech"><strong>Unity 3D | 3ds Max | C#</strong></p>
             <p className="blurb">Difficult yet intuitive, Usagi Warrior's gameplay provides extreme highs and lows.</p>
             <div className="task-content" style={{ lineHeight: 1.6 + 'em' }}>
               <br />
               <ul className="project-text">
                 <li>Project Manager: Handled development timelines and delegation.</li>
                 <li>Game Programmer: Responsible for enemy modeling and behaviors, transitioning, and managing gameplay states.</li>
-                <li>Visual Editior: Visual Editor: Creation of simple terrain and sky boxes.</li>
+                <li>Visual Editor: Creation of simple terrain and sky boxes.</li>
                 <li>Level Designer: Aimed for simple, yet precise platforming to encourage sharp judgement and skills.</li>
               </ul>
             </div>
