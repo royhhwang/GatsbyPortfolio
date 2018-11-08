@@ -1,0 +1,22 @@
+@import "setup";
+
+.footer {
+  margin-top: 1rem;
+  height: 5rem;
+
+  background-attachment: fixed;
+  background-size: 40%;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    background-color: $bg-green;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.88;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
