@@ -2,102 +2,107 @@
 
 // Utility classes
 a:-webkit-any-link {
-    color: white;
+  color: white;
+}
+
+a:focus {
+  background-color: white;
+  color: black;
 }
 
 .wrapper {
-    margin: 0 auto;
-    max-width: 1250px;
-    padding: 0rem 1rem;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 0rem 1rem;
+  width: 100%;
 }
 
 .section-header {
-    color: $light-gray;
-    font-size: 5em;
-    overflow: hidden;
-    padding: 2rem 0 1rem;
-    width: 100%;
+  color: $light-gray;
+  font-size: 5em;
+  overflow: hidden;
+  padding: 2rem 0 1rem;
+  width: 100%;
 
-    @media screen and ($large-tablet-up) {
-        font-size: 6em;
-        padding: 4rem 0 2rem;
-    }
+  @media screen and ($large-tablet-up) {
+    font-size: 6em;
+    padding: 4rem 0 2rem;
+  }
 }
 
 .clearfix {
-    @include clearfix;
+  @include clearfix;
 }
 
 .dark-green-button {
-    @include Roboto;
+  @include Roboto;
 
-    background-color: $text-bg-green;
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    padding: 0.2em 0.8em;
-    text-transform: uppercase;
+  background-color: $text-bg-green;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 0.2em 0.8em;
+  text-transform: uppercase;
 }
 
 .leaves-button {
-    background-blend-mode: soft-light;
-    background-color: #788655dc;
-    background-size: 140%;
-    display: inline-block;
-    transition: transform $med-speed, box-shadow $med-speed;
+  background-blend-mode: soft-light;
+  background-color: #788655dc;
+  background-size: 140%;
+  display: inline-block;
+  transition: transform $med-speed, box-shadow $med-speed;
+
+  .leaves-button-link {
+    @include Roboto;
+    @include smooth;
+
+    align-items: center;
+    color: $bright-green;
+    display: flex;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 1.25em 2.25em;
+    text-transform: uppercase;
+    transition: color $med-speed, background-color $med-speed;
+  }
+
+  .leaves-orange-link {
+    @include Roboto;
+    @include smooth;
+
+    align-items: center;
+    color: $orange;
+    display: flex;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 1.25em 2.25em;
+    text-transform: uppercase;
+    transition: color $med-speed, background-color $med-speed;
+  }
+
+  .leaves-button-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .leaves-button-label {
+    padding-left: 1em;
+    font-weight: inherit;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
 
     .leaves-button-link {
-        @include Roboto;
-        @include smooth;
-
-        align-items: center;
-        color: $bright-green;
-        display: flex;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        padding: 1.25em 2.25em;
-        text-transform: uppercase;
-        transition: color $med-speed, background-color $med-speed;
+      background-color: $bright-green;
+      color: $bg-green !important;
     }
 
     .leaves-orange-link {
-        @include Roboto;
-        @include smooth;
-
-        align-items: center;
-        color: $orange;
-        display: flex;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        padding: 1.25em 2.25em;
-        text-transform: uppercase;
-        transition: color $med-speed, background-color $med-speed;
+      background-color: $bright-green;
+      color: $bg-green !important;
     }
-
-    .leaves-button-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .leaves-button-label {
-        padding-left: 1em;
-        font-weight: inherit;
-    }
-
-    &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 24px 88px -8px rgba(30, 30, 30, 0.352);
-
-        .leaves-button-link {
-            background-color: $bright-green;
-            color: $bg-green !important;
-        }
-
-        .leaves-orange-link {
-            background-color: $bright-green;
-            color: $bg-green !important;
-        }
-    }
+  }
 }
