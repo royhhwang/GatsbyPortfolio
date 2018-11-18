@@ -24,42 +24,42 @@ class Work extends Component {
                 {
                     "name": "Artsy",
                     "image": Artsy,
-                    "descript": "artsy image",
+                    "descript": "artsy.com logo",
                     "link": "/artsy",
                     "tech": "React | Artsy API | Bootstrap | Sass"
                 },
                 {
                     "name": "In the Dark",
                     "image": Ring,
-                    "descript": "ring image",
+                    "descript": "spooky image of the ring",
                     "link": "/inthedark",
                     "tech": "React | A-Frame | 3ds Max | Parallax.js"
                 },
                 {
                     "name": "Corgi",
                     "image": Corgi,
-                    "descript": "corgi image",
+                    "descript": "coding with corgis logo",
                     "link": "/corgi",
                     "tech": "React | Unity 3D"
                 },
                 {
                     "name": "Usagi",
                     "image": Usagi,
-                    "descript": "usagi image",
+                    "descript": "usagi warrior game icon",
                     "link": "/usagi",
                     "tech": "Unity 3D | 3ds Max | C#"
                 },
                 {
                     "name": "Race Painting",
                     "image": Race,
-                    "descript": "race painting image",
+                    "descript": "race painting icon",
                     "link": "/racepainting",
                     "tech": "Phaser | Socket.io | MERN Stack"
                 },
                 {
                     "name": "Project Wombat",
                     "image": Wombat,
-                    "descript": "wombat image",
+                    "descript": "wombat tuxedo logo",
                     "link": "/wombat",
                     "tech": "MERN Stack | Sass | Gulp | AJAX"
                 }

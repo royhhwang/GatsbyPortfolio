@@ -14,7 +14,7 @@ const Contact = () => (
             <div>
                 <div className="leaves-button contact-section" style={{ backgroundColor: "transparent" }}>
                     <a href="https://github.com/royhhwang" target="_blank" className="leaves-orange-link">
-                        <img className="leaves-button-img" src={Git} alt="https://github.com/royhhwang" />
+                        <img className="leaves-button-img" src={Git} alt="link to roy's github" />
                         <p className="leaves-button-label"> GitHub</p>
                     </a>
                 </div>
@@ -23,7 +23,7 @@ const Contact = () => (
             <div>
                 <div className="leaves-button contact-section" style={{ backgroundColor: "transparent" }}>
                     <a href="https://www.linkedin.com/in/royhhwang/" target="_blank" className="leaves-orange-link">
-                        <img className="leaves-button-img" src={Link} alt="https://www.linkedin.com/in/royhhwang/" />
+                        <img className="leaves-button-img" src={Link} alt="link to roy's linkedin" />
                         <p className="leaves-button-label"> LinkedIn</p>
                     </a>
                 </div>
@@ -32,7 +32,7 @@ const Contact = () => (
             <div>
                 <div className="leaves-button contact-section" style={{ backgroundColor: "transparent" }}>
                     <a href="mailto:royhhwang@gmail.com" className="leaves-orange-link">
-                        <img className="leaves-button-img" src={Gmail} alt="https://www.linkedin.com/in/royhhwang/" />
+                        <img className="leaves-button-img" src={Gmail} alt="write me an email" />
                         <p className="leaves-button-label"> Email</p>
                     </a>
                 </div>
